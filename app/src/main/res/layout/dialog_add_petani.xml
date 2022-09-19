@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_20sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lytTitleGardenMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_header_menu_home">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:text="Tambah data Petani dan Kebun"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imgClose"
+                    style="?android:borderlessButtonStyle"
+                    android:layout_width="@dimen/_41sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:padding="@dimen/_10sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_close" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_header_submenu_home"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_16sdp"
+                android:paddingBottom="@dimen/_20sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:text="@string/farmer"
+                    android:textColor="@color/color_title_home"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/shape_text_input"
+                    android:padding="0dp"
+                    android:gravity="center_vertical">
+
+                    <EditText
+                        android:id="@+id/textAnchor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/spinnerFarmer"
+                        style="@style/SpinnerTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_alignTop="@id/textAnchor"
+                        android:layout_alignBottom="@id/textAnchor"
+                        android:layout_marginRight="8dp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:textColor="@color/colorChevron"
+                        android:textSize="@dimen/_14sdp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:text="@string/garden"
+                    android:textColor="@color/color_title_home"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/shape_text_input"
+                    android:padding="0dp"
+                    android:gravity="center_vertical">
+
+                    <EditText
+                        android:id="@+id/textAnchor1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/spinnerGarden"
+                        style="@style/SpinnerTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_alignTop="@id/textAnchor1"
+                        android:layout_alignBottom="@id/textAnchor1"
+                        android:layout_marginRight="8dp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:textColor="@color/colorChevron"
+                        android:textSize="@dimen/_14sdp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:text="Persentasi Total Tonasi (Netto)"
+                    android:textColor="@color/color_title_home"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_4sdp">
+
+                    <EditText
+                        android:id="@+id/edtTotalTonasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:background="@drawable/shape_text_input"
+                        android:hint="Total Tonasi (Netto)"
+                        android:inputType="numberDecimal" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_12sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:tint="@color/md_grey_500"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/percent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_32sdp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnConfirmationNegative"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_btn_cancel"
+                        android:fontFamily="@font/candara_bold"
+                        android:textAllCaps="false"
+                        android:textColor="#f26327"
+                        android:textSize="@dimen/_14sdp"
+                        tools:text="Kembali" />
+
+                    <androidx.legacy.widget.Space
+                        android:layout_width="@dimen/_6sdp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/btnConfirmationPositive"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_btn_daftar"
+                        android:fontFamily="@font/candara_bold"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp"
+                        tools:text="Simpan" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+</layout>

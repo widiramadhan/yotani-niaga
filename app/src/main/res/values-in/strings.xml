@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Yo Tani Niaga</string>
+    <string name="title_activity_login">Masuk</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Kata Sandi</string>
+    <string name="prompt_password_mandatory">Kata Sandi<font color='#FF0000'>*</font></string>
+    <string name="action_sign_in">Masuk</string>
+    <string name="action_sign_in_short">Masuk</string>
+    <string name="welcome">"Selamat datang"</string>
+    <string name="invalid_username">Nama user tidak valid</string>
+    <string name="invalid_password">Kata Sandi lebih >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="srTitleMyApplication">Lamaran Saya</string>
+    <string name="srTitleChangePasswordProfile">Ganti Kata Sandi</string>
+    <string name="srExpectedSalaryValue">Rp %1$s</string>
+    <string name="action_settings">Pengaturan</string>
+    <string name="get_token_sms">Hai, dari Yo Tani. Token anda adalah </string>
+    <string name="register">Daftar</string>
+    <string name="verification_code_has_sent_to">Kode verifikasi telah dikirimkan ke nomor</string>
+    <string name="please_type_the_verification_code_sent_to">Kode verifikasi telah dikirimkan ke nomor</string>
+    <string name="validate">Validasi</string>
+    <string name="phone_no">No Telepon</string>
+    <string name="please_request_new_token">Mohon minta token kembali</string>
+    <string name="seconds_remaining">Detik lagi</string>
+    <string name="second_remaining">Second remaining</string>
+    <string name="get_new_token">Kirim Ulang Kode Verifikasi</string>
+    <string name="menu_gallery">Galeri</string>
+    <string name="menu_home">Awal</string>
+    <string name="menu_send">Kirim</string>
+    <string name="menu_share">Berbagi</string>
+    <string name="menu_tools">Pengaturan</string>
+    <string name="srChangePassword">Ganti Kata Sandi</string>
+    <string name="srNewPassword">Kata Sandi Baru</string>
+    <string name="srTxtBtnContinue">Lanjutkan</string>
+    <string name="srHintNewPassword">Masukan Kata Sandi Baru</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="srTitleSuccess">Berhasil</string>
+    <string name="registered_password">Kata Sandi Terdaftar</string>
+    <string name="registered_phone">Nomor Telepon Terdaftar</string>
+    <string name="opening_statement">SELAMAT DATANG</string>
+    <string name="result_search">Hasil Pencarian</string>
+
+    <string name="please_login_to_access_full_feature">Silahkan masuk untuk mengakses fitur lebih lengkap </string>
+
+
+    <string name="remember_me">Ingat saya</string>
+    <string name="forgot_password">Lupa Kata Sandi</string>
+    <string name="did_not_have_account">"Tidak punya akun? "</string>
+    <string name="copyright">Copyright 2019 </string>
+
+    <string name="detail_notif">Info Selengkapnya</string>
+    <string name="please_enter_phone_number_registered_in_yotani_kerja">Silahkan masukkan nomor telepon yang terdaftar di YoTani Niaga</string>
+    <string name="continue_text">Lanjutkan</string>
+    <string name="srLblBtnRegister">Daftar</string>
+
+
+    <string name="srLblInfomationWillSendMessage">Kami akan mengirimkan sms kode verifikasi</string>
+
+    <string name="srConfirmNewPasswordChangPassword">Konfirmasi kata sandi baru</string>
+    <string name="srConfirmationRegister">Apakah nomor yang anda masukkan sudah benar?</string>
+
+    <string name="srTxtBtnNegative">Tidak, Ubah</string>
+    <string name="srTxtBtnPositive">Ya, Benar</string>
+
+    <string name="srTxtBtnConfirm">Konfirmasi</string>
+    <string name="srTxtBtnCancel">Batal</string>
+
+    <string name="srErrorPhoneNo">Mohon masukkan nomor telepon terdaftar</string>
+    <string name="srErrorPhoneNoNotRegistered">Mohon masukkan nomor telepon</string>
+    <string name="srInputVerificationCode">Masukkan kode verifikasi</string>
+    <string name="number">0812-1234-5678</string>
+    <string name="verification">Verifikasi</string>
+    <string name="srTitleDenied">Cek Kembali</string>
+    <string name="srReturn">Kembali</string>
+    <string name="srGoToLoginFromDialog">Masuk Sekarang</string>
+    <string name="srMessageSuccess">Kata Sandi Baru Berhasil Diperbaharui</string>
+    <string name="srMessageSuccessCallUs">Data Berhasil Dikirim</string>
+    <string name="srMessageDenied">Sepertinya ada ketidaksamaan pada kata sandi</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="second_rv">Vertical RecyclerView</string>
+
+    <string name="srDrawerHome">Beranda</string>
+    <string name="srDrawerProfile">Profil</string>
+    <string name="srDrawerCareer">Karir</string>
+    <string name="srDrawerFriend">Teman</string>
+    <string name="srDrawerTradeUnion">Serikat Kerja</string>
+    <string name="srDrawerBPJSKetenagakerjaan">BPJS Ketenagakerjaan</string>
+    <string name="srDrawerHelp">Bantuan</string>
+    <string name="srDrawerLogout">Keluar</string>
+
+    <string name="srSure">Apakah Anda Yakin</string>
+    <string name="srToLogout">Ingin Keluar?</string>
+
+    <string name="srCancel">Batal</string>
+    <string name="srLogOut">Keluar</string>
+
+    <string name="srToChangeLanguage">Ingin mengubah bahasa?</string>
+    <string name="srChangingLanguage">Mengubah bahasa</string>
+    <string name="srYes">Ya</string>
+
+    <string name="title_toolbar_notif">Notifikasi</string>
+    <string name="title_toolbar_News">Berita</string>
+    <string name="refresh_notif">Tampilkan Lebih</string>
+    <string name="titleToolbarTradeUnionFilterResult">Hasil Pencarian</string>
+
+    <string name="srListHelp">Daftar Bantuan</string>
+
+    <string name="srSearchHelp">Pencarian bantuan</string>
+    <string name="srNeedMoreHelp">Butuh bantuan lebih lanjut?</string>
+    <string name="srCallUs">Hubungi Kami</string>
+    <string name="srDetailProblem">Detail Masalah</string>
+    <string name="srDescription">Deskripsi</string>
+
+    <string name="news_palm">Berita Sawit</string>
+    <string name="news">Berita</string>
+    <string name="silahkan_log_in_untuk_mengakses_fitur_lebih_lengkap">Silahkan masuk untuk mengakses fitur lebih lengkap</string>
+
+    <string name="title_activity_help">Bantuan Aktifitas</string>
+    <string name="titleToolbarHelp">Bantuan</string>
+
+    <string name="hastag_help">#Kepegawaian</string>
+    <string name="ticket_help">Tiket</string>
+    <string name="hint_search_help">Cari Bantuan</string>
+
+    <string name="text_button_add_question">Tambah Pertanyaan</string>
+    <string name="text_list_help">Daftar bantuan</string>
+    <string name="button_help_answer">Balas</string>
+
+    <string name="please_wait_processing_your_request">Mohon tunggu, sedang memproses</string>
+    <string name="loading">Memuat</string>
+
+    <string name="srTxtOldPassword">Masukan kata sandi lama</string>
+    <string name="srErrorTextInputPassword">cek kembali kata sandi anda</string>
+
+    <string name="cancel_application_item_action">Batal Aplikasi</string>
+    <string name="title">Judul</string>
+
+    <string name="srName">Nama</string>
+    <string name="srNameMandatory">Nama<font color='#FF0000'>*</font></string>
+    <string name="srEmail">Email</string>
+    <string name="description">Deskripsi</string>
+    <string name="phoneNo">No Hp</string>
+    <string name="phoneNoMandatory">No Hp<font color='#FF0000'>*</font></string>
+    <string name="attachment">Lampiran</string>
+    <string name="upload">Unggah</string>
+    <string name="send">Kirim</string>
+    <string name="welcomeToYotaniKerja">Selamat datang di YoTani Niaga</string>
+    <string name="pleaseCompleteYourData">Silahkan lengkapi data anda</string>
+
+    <string name="worker">Pekerja</string>
+    <string name="agent">Agen</string>
+    <string name="inputYourName">Masukkan nama anda</string>
+    <string name="inputYourPhoneNo">Masukkan no hp anda</string>
+    <string name="inputYourPassword">Masukkan kata sandi anda</string>
+    <string name="back">Kembali</string>
+    <string name="srProfile">Profil</string>
+
+    <string name="choose2">Pilih</string>
+    <string name="srCamera">Kamera</string>
+    <string name="srGallery">Galeri</string>
+    <string name="srOk">Oke</string>
+
+    <string name="srSeeProfile">Lihat Profil</string>
+    <string name="srOnlineTest">Tes Online</string>
+    <string name="srJobVacancy">Lowongan Kerja</string>
+    <string name="srMyApplication">Lamaran Saya</string>
+    <string name="srJobOffers">Penawaran Kerja</string>
+    <string name="srTitleContactInforJobOffer">Contact Info</string>
+    <string name="srLblMobilePhoneJobOffer">No Hp</string>
+    <string name="srLblEmailJobOffer">Email</string>
+    <string name="srLblTitleWorkExperienceJobOffer">Pengalaman kerja</string>
+    <string name="srLblPositionJobOffer">posisi</string>
+    <string name="srLblCompanyNameJobOffer">Perusahaan</string>
+    <string name="srLblEmployeeTypelJobOffer">Type Karyawan</string>
+    <string name="srLblWorkPeriodlJobOffer">Periode Kerja</string>
+    <string name="srLblAttachmentJobOffer">Lampiran</string>
+    <string name="srLblTitleEducationJobOffer">Edukasi</string>
+    <string name="srLblTitleSkillsJobOffer">Keterampilan</string>
+    <string name="srLblTitleExpectedSalaryJobOffer">Gaji Yang Diharapkan</string>
+    <string name="srLblSchoolNameJobOffer">Sekolah</string>
+    <string name="srLblDegreeJobOffer">Gelar</string>
+    <string name="srLblFieldOfStudyJobOffer">Bidang Studi</string>
+    <string name="srLblYearOfStudyJobOffer">Tahun</string>
+    <string name="srLblInformationMoreStudyJobOffer">Informasi Tambahan</string>
+    <string name="srSendApplication">Kirim Lamaran</string>
+    <string name="srApply">Lamar</string>
+    <string name="srlblLocation">Lokasi</string>
+    <string name="srLblJobStatus">Status Pekerjaan</string>
+    <string name="srLblIndusty">Industri</string>
+    <string name="srLblCondrition">Syarat</string>
+    <string name="srLblJobDescription">Deskripsi Pekerjaan</string>
+    <string name="srLblJobDetails">Detail Pekerjaan</string>
+
+    <string name="srInvalidUsernameOrPassword">Nomor telepon atau kata sandi Anda salah, silakan coba lagi</string>
+    <string name="srUserNotFound">Pengguna tidak ditemukan</string>
+    <string name="srServerError">Server Eror</string>
+    <string name="srJobVacancyLowonganPekerjaan">Lowongan Pekerjaan</string>
+    <string name="srWelcome">SELAMAT DATANG</string>
+
+    <string name="hint_write_message">Tulis Pesan</string>
+    <string name="lable_fullname_Help">Nama</string>
+    <string name="lable_email_Help">Email</string>
+    <string name="lable_phonenumber_Help">No.HP</string>
+    <string name="lable_information_Help">Informasi</string>
+    <string name="hint_image_Help_Detail">Klik gambar untuk memperbesar</string>
+    <string name="profileAlamat">Alamat<font color='#FF0000'>*</font></string>
+    <string name="profileBPJS">BPJS Ketenagakerjaan</string>
+    <string name="profileBerlakuHingga">Berlaku Hingga</string>
+    <string name="profileContactInfo">Informasi Kontak</string>
+    <string name="profileEdukasi">Edukasi</string>
+    <string name="profileEmail">Email</string>
+    <string name="profileGaji">Gaji</string>
+    <string name="profileInformasiUmum">Informasi Umum</string>
+    <string name="profileKTP">KTP  <font color='#FF0000'>*</font></string>
+    <string name="profileKTPNonMandatory">No KTP</string>
+    <string name="profileKartuKeluarga">Kartu Keluarga</string>
+    <string name="profileKecamatan">Kecamatan <font color='#FF0000'>*</font></string>
+    <string name="profileKelurahan">Kelurahan <font color='#FF0000'>*</font></string>
+    <string name="profileKelengkapanData">Kelengkapan Data</string>
+    <string name="profileKerjaan">Pekerjaan</string>
+    <string name="profileKeterampilan">Keterampilan</string>
+    <string name="profileKewarganegaraan">Kewarganegaraan</string>
+    <string name="profileNIK">Nomor Induk Kependudukan</string>
+    <string name="profileNPWP">NPWP</string>
+    <string name="profileNama">Nama</string>
+    <string name="profileNamaMandatory">Nama<font color='#FF0000'>*</font></string>
+    <string name="profileNoBPJS">No. BPJS</string>
+    <string name="profileNoHandphone">No. Handphone</string>
+    <string name="profileNoKartuKeluarga">No. Kartu Keluarga</string>
+    <string name="profileNoNPWP">No. NPWP</string>
+    <string name="profileNoSKCK">No. SKCK</string>
+    <string name="profileNominalGaji">Nominal Gaji</string>
+    <string name="profilePengalamanKerja">Riwayat Pekerjaan</string>
+    <string name="profilePhoneNumber">No. Telepon<font color='#FF0000'>*</font></string>
+    <string name="profileProvinsi">Provinsi <font color='#FF0000'>*</font></string>
+    <string name="profileReglion">Agama</string>
+    <string name="profileSerikatKerja">Serikat Kerja</string>
+    <string name="profileStatusMarriage">Status Perkawinan</string>
+    <string name="profileSuratRekomendasiDesa">Surat Rekomendasi</string>
+    <string name="profileTambahEdukasi">Tambah Edukasi</string>
+    <string name="profileTambahKeterampilan">Tambah Kemampuan</string>
+    <string name="profileTambahPengalamanKerja">Tambah Riwayat Pekerjaan</string>
+    <string name="profileTambahSerikatKerja">Tambah Serikat Kerja</string>
+
+<!--    jobvacancy / penawaran kerja-->
+    <string name="srAroundExpectedSalary">Sekitar gaji yang diharapkan</string>
+    <string name="srAboveExpectedSalary">Diatas gaji yang diharapkan</string>
+    <string name="srBelowExpectedSalary">Dibawah gaji yang diharapkan</string>
+    <string name="srPleaseSignInToSeeSalary">Silahkan masuk untuk melihat gaji</string>
+    <string name="selengkapnya">Selengkapnya</string>
+    <string name="srMan">Orang</string>
+
+    <!--    photoview-->
+    <string name="srTitleViewPhoto">Lihat Foto</string>
+
+    <string name="data_empty_message">data kosong</string>
+
+<!--    register worker-->
+    <string name="srErrorPleaseInputFullName">Mohon masukkan nama lengkap</string>
+    <string name="srErrorPleaseInputPassword">Mohon masukkan kata sandi</string>
+
+    <!-- search -->
+    <string name="srErrorPleaseInputSearchJob">Mohon masukkan pencarian Pekerjaan</string>
+    <string name="srErrorPleaseInputSearchLoc">Mohon pilih lokasi yang tersedia</string>
+
+<!--    register-->
+    <string name="srPleaseInputYourPhoneNumber">Silahkan isi nomor telepon terlebih dahulu</string>
+    <string name="srPhoneNumberNotValid" tools:ignore="ExtraTranslation">Nomor telepon minimal 10 digit angka</string>
+    <string name="srMasukanNoTelepon">Masukan no telepon</string>
+    <string name="srRegisterAgentSuccess">Registrasi anda sebagai agen berhasil. Silahkan lakukan login</string>
+    <string name="srRegisterWorkerSuccess">Registrasi anda sebagai pekerja berhasil. Silahkan lakukan login</string>
+    <string name="srFailedToRegister">Gagal registrasi, nomor telepon telah digunakan</string>
+    <string name="srValidatePassword">Tolong gunakan password minimal 8 karakter alfanumerik</string>
+    <string name="srConfirmation">Konfirmasi</string>
+    <string name="srConfirmationRegisterWorkerAgent">Apakah anda yakin untuk registrasi?</string>
+
+    <string name="monday_day">Senin</string>
+    <string name="tuesday_day">Selasa</string>
+    <string name="wednesday_day">Rabu</string>
+    <string name="thursday_day">Kamis</string>
+    <string name="friday_day">Jum\'at</string>
+    <string name="saturday_day">Sabtu</string>
+    <string name="sunday_day">Minggu</string>
+
+    <string name="january_month">Januari</string>
+    <string name="february_month">Februari</string>
+    <string name="march_month">Maret</string>
+    <string name="april_month">April</string>
+    <string name="may_month">Mei</string>
+    <string name="june_month">Juni</string>
+    <string name="july_month">Juli</string>
+    <string name="august_month">Agustus</string>
+    <string name="september_month">September</string>
+    <string name="october_month">Oktober</string>
+    <string name="november_month">Nopember</string>
+    <string name="december_month">Desember</string>
+    <string name="profileTanggalLahir">Tanggal Lahir</string>
+    <string name="profileTempatLahir">Tempat Lahir</string>
+
+    <string name="srErrorMessageFiledEmpty">tidak boleh kosong</string>
+    <string name="srErrorMessageNotAlphanumericCharacterAppear">Hanya diperbolehkan karakter alfanumerik</string>
+    <string name="srErrorMessageConfirmPasswordNotSame">Kata sandi konfirmasi tidak sama dengan kata sandi baru</string>
+
+    <string name="srErrorMessageFiledEmptyOldPassword">Mohon masukan kata sandi lama anda</string>
+    <string name="srErrorMessageFiledEmptyNewPassword">Mohon masukan kata sandi baru anda</string>
+    <string name="srErrorMessageFiledEmptyConfPassword">Mohon masukan kata konfirmasi kata sandi anda</string>
+
+    <!--    job vacancy-->
+    <string name="srFilter">Saring</string>
+    <string name="srContract">Kontrak</string>
+    <string name="srWorkAndResponsibility">Tugas dan Tanggung Jawab</string>
+    <string name="srAgeLimit">Maksimum Usia</string>
+    <string name="srTotalNeeded">Total yang dibutuhkan</string>
+    <string name="srDeadline">Penutupan</string>
+
+    <!--    company-->
+    <string name="srHeadOffice">Kantor Pusat</string>
+    <string name="srCompanyName">Nama Perusahaan</string>
+    <string name="srCompanyAddress">Alamat Perusahaan</string>
+    <string name="srWebsite">Halaman web</string>
+    <string name="srRegionalOffice">Kantor Regional</string>
+    <string name="srField">Kebun</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="srFieldAddress">Alamat Kebun</string>
+    <string name="srCompany">Perusahaan</string>
+    <string name="srFieldLocation">Lokasi Kebun</string>
+
+    <string name="lable_radio_button_worker">Pekerja</string>
+    <string name="lable_radio_button_agent">Agen</string>
+
+    <!--    search-->
+    <string name="srRangeSalary">Rentang Gaji Bulanan</string>
+    <string name="srMinimal">Minimum</string>
+    <string name="srMaximal">Maksimum</string>
+    <string name="srLocationSearch">Cari Lokasi</string>
+    <string name="srJobSearch">Cari Pekerjaan</string>
+    <string name="srValidationSearchMinimalLowerThanMaksmimal">Pastikan gaji minimum lebih kecil dari gaji maksimum</string>
+
+    <!--    serikat kerja-->
+    <string name="srConfederation">Konfederasi</string>
+    <string name="srNational">Nasional</string>
+    <string name="srCity">Kabupaten</string>
+    <string name="srSearch">Cari</string>
+
+    <string name="titleTabConfederation">Konfederasi</string>
+    <string name="titleTabNational">Nasional</string>
+    <string name="titleTabProvince">Provinsi</string>
+    <string name="titleTabCity">Kota</string>
+    <string name="titleTabField">Kebun</string>
+
+    <string name="titleToolbarFilter">Saring</string>
+    <string name="titleToolbarFilterReset">atur ulang</string>
+
+    <string name="srTokenInvalid">Token Invalid</string>
+    <string name="srSessionExpiredPleaseLoginAgain">Sesi anda habis, mohon login lagi</string>
+    <string name="srApplyError">Lamaran anda gagal dikirim, mohon coba lagi nanti</string>
+    <string name="srApplySuccess">Lamaran anda berhasil dikirim</string>
+
+    <string name="srSomethingWentWrongPleaseTryAgainLater">Internet terputus. Mohon periksa kembali koneksi anda</string>
+    <string name="srToSubmitApplication">Mengirim lamaran ini?</string>
+    <string name="srProcess">Proses</string>
+    <string name="srSeeAll">Lihat Semua</string>
+    <string name="srSortBy">Urutkan Berdasarkan</string>
+    <string name="srProfileFailedPicture">Foto Gagal</string>
+    <string name="phonNumberExist">Nomor Telepon sudah terdaftar</string>
+    <string name="phoneNumberDidntExist">Nomor telepon tidak terdaftar di YoTani. Silahkan cek kembali</string>
+    <string name="termsAndConditionValidate">Silahkan pilih syarat dan ketentuan terlebih dahulu</string>
+    <string name="tosFirstLine">Saya menyetujui dengan</string>
+    <string name="tosSecondLine">syarat dan ketentuan</string>
+    <string name="tosThirdLine"><b><i><font fgcolor="#F26327">Syarat dan Ketentuan</font></i></b> aplikasi YoTani Niaga</string>
+
+    <string name="srLblSave">Simpan</string>
+    <string name="srLblReset">Atur ulang</string>
+
+    <string name="profileKodePos">Kode Pos</string>
+    <string name="profileHint">Mohon untuk input data</string>
+    <string name="profileTempatTanggalLahir">Tempat Tanggal Lahir</string>
+    <string name="warning">Peringatan </string>
+    <string name="error">Galat</string>
+    <string name="srJobFound">Pekerjaan Ditemukan</string>
+    <string name="ops_maaf_pekerjaan_yang_anda_cari_belum_ada">Ops maaf, pekerjaan yang anda cari belum ada</string>
+    <string name="profileEndDate">Tanggal Akhir</string>
+    <string name="profileStartDate">Tanggal Mulai</string>
+    <string name="profileEdukasiDeskripsi">Informasi Tambahan</string>
+    <string name="profileDeskripsiPengalamanKerja">Deskripsi</string>
+    <string name="profileLampiranPengalamanKerja">Lampiran</string>
+    <string name="profileNamaPerusahaanPengalamanKerja">Nama Perusahaan</string>
+    <string name="profilePeriodePengalamanKerja">Periode Kerja</string>
+    <string name="profilePosisiPengalamanKerja">Posisi</string>
+    <string name="profileTipePengalamanKerja">Tipe Karyawan</string>
+    <string name="profileBidangStudiEdukasi">Bidang Studi</string>
+    <string name="profileGelarEdukasi">Gelar</string>
+    <string name="profileInformasiTambahan">Informasi Tambahan</string>
+    <string name="profileSekolahEdukasi">Sekolah / Universitas</string>
+    <string name="profileBatal">Batal</string>
+    <string name="profileSimpan">Simpan</string>
+    <string name="profileExplanationPengalamanKerja">"Saya masih bekerja disini "</string>
+    <string name="profileUploadBtnPengalamanKerja">Unggah</string>
+    <string name="profileKebunSerikatKerja">Kebun</string>
+    <string name="srExperienceLevel">Tingkat Pengalaman</string>
+    <string name="srPleaseInputRegisteredPhoneNo">Silahkan isi nomor telepon terlebih dahulu</string>
+    <string name="srPleaseInputPassword">Silahkan isi kata sandi terlebih dahulu</string>
+
+    <string name="srPleaseEnterValidPhoneNumber">Mohon masukkan nomor telepon yang valid</string>
+
+    <string name="srLoading">Memuat</string>
+
+    <string name="srAreYouSureCancelApplication">Apakah anda yakin akan membatalkan lamaran ini?</string>
+    <string name="srApplicationAlreadyCanceled">Lamaran anda telah dibatalkan</string>
+    <string name="srApplicationSuccessCanceled">Lamaran anda telah berhasil dibatalkan</string>
+    <string name="srHelpCategory">Kategori Bantuan</string>
+    <string name="profileKabupaten">Kabupaten / Kota<font color='#FF0000'>*</font></string>
+    <string name="srTermsAndCondition">Syarat dan Ketentuan</string>
+
+    <string name="srDeleteNotification">Hapus Notifikasi</string>
+    <string name="srCarreer">Karir</string>
+
+    <string name="srMessageSuccessSubmitTicket">Bantuan berhasil dibuat</string>
+    <string name="srPleaseSelectCategory">Mohon pilih kategori</string>
+
+    <string name="srApplyErrorAlreadySend">Lamaran anda sudah pernah dikirim</string>
+    <string name="srPleaseFillDesctioption">Mohon isi deskripsi</string>
+
+    <string name="srSelectPhotoFromGallery">Pilih foto dari galeri</string>
+    <string name="srCapturePhotoFromCamera">Ambil foto dari kamera</string>
+    <string name="srHelpFilter">Filter Bantuan</string>
+    <string name="srChooseHelpCategory">"Pilih Kategori Bantuan</string>
+
+    <string name="srChooseStatusCategory">Pilih Status</string>
+
+    <string name="srStartDateHaveLowerThanEndDate">"Tampilkan dari tidak boleh lebih besar dari Sampai"</string>
+
+    <string name="ops_maaf_pekerjaan_yang_anda_filter_belum_ada">Ops maaf, pekerjaan yang anda filter belum ada</string>
+
+    <string name="srSelectConfederation">Pilih Konfederasi</string>
+
+    <string name="srSelectNational">Pilih Nasional</string>
+    <string name="srSelectProvince">Pilih Provinsi</string>
+    <string name="srSelectCity">Pilih Kabupaten</string>
+
+    <string name="srSelectBank">Pilih Bank</string>
+    <string name="srSelectBusiness">Pilih Badan Usaha</string>
+
+    <string name="srSelectField">Pilih Kebun</string>
+    <string name="srSelectDistrict">Pilih Kecamatan</string>
+    <string name="srSelectSubDistrict">Pilih Kelurahan</string>
+
+    <string name="srPleaseSelectConfederationFirst">Mohon pilih konfederasi terlebih dahulu</string>
+
+    <string name="srProvince">Provinsi</string>
+
+    <string name="srMembers">Anggota</string>
+
+    <string name="srSendMembers">Kirim Anggota</string>
+    <string name="srCancelMembers">Batalkan Lamaran</string>
+    <string name="nama_anggota_no_posisi_lokasi">Cari Nama / Nomor /  Posisi / Lokasi</string>
+    <string name="srPosition">Posisi</string>
+    <string name="srLocation">Lokasi</string>
+
+    <string name="srToSendMemberApplyJob">Ingin mengirim anggota ini melamar pekerjaan?</string>
+    <string name="srToCancelMemberApplyJob">Ingin membatalkan lamaran anggota ini?</string>
+
+    <string name="profileNewGallery">Ambil dari Gallery</string>
+    <string name="profileNewPictures">Ambil Foto</string>
+    <string name="srAcceptInvitation">Lihat Lamaran</string>
+    <string name="srDeclineInvitation">Tolak Lamaran</string>
+    <string name="pleaseCompleteNotification">Apa anda yakin?</string>
+    <string name="workingSamePosition">Saya masih bekerja dengan posisi yang sama</string>
+    <string name="srSearchLocation">Cari berdasarkan Lokasi</string>
+    <string name="srSearchPosition">Cari berdasarkan Posisi</string>
+
+    <string name="invitation_success_to_decline">Penawaran kerja berhasil ditolak</string>
+    <string name="srConfirmationDeclineInvitation">Apakah anda yakin ingin tolak penawaran kerja?</string>
+
+    <string name="srJobClosed">Pekerjaan Ditutup</string>
+
+<!--    my application-->
+    <string name="srApplicationSuccessfullySent">Lamaran Berhasil Dikirim</string>
+    <string name="srApplicationAlreadyReview">Lamaran Telah Direview</string>
+    <string name="srApplicationIsBeingReviewed">Lamaran sedang ditinjau</string>
+    <string name="srApplicationCanceled">Lamaran Dibatalkan</string>
+    <string name="srApplicationDenied">Lamaran Ditolak</string>
+    <string name="srWelcomeTo">Selamat Datang Di</string>
+    <string name="srNoAnggota">No. Anggota :</string>
+    <string name="srNameHeader">Nama :</string>
+    <string name="srApplicationInProses">Lamaran sedang diproses</string>
+    <string name="srApplicationReceived">Lamaran telah diterima</string>
+
+    <string name="srSuccessSendMembers">Berhasil dikirim</string>
+
+    <string name="srSelectLocation">Pilih Lokasi</string>
+
+    <string name="srSelectPosition">Pilih Posisi</string>
+
+    <string name="srLblSpinnerLocation">Pilih Lokasi</string>
+    <string name="srLblSpinnerPosition">Pilih Posisi</string>
+
+    <string name="srSuccessMemberApplied">Berhasil mengirim anggota, mohon cek lamaran saya untuk melihat proses lamaran</string>
+    <string name="srFailedMemberApplied">Gagal mengirim anggota</string>
+
+    <string name="srNomorMember">Nomor Anggota</string>
+    <string name="srStatusPekerjaan">Status Pekerjaan</string>
+    <string name="srAnggota">Anggota</string>
+    <string name="srError201">Data tidak dapat disimpan karena data bersifat unique dan tidak bisa duplikasi</string>
+    <string name="srError202">Data tidak berhasil disimpan karena tidak ada perubahan data dari data sebelumnya</string>
+    <string name="srError400">Tipe data tidak sesuai sehingga gagal untuk melakukan penyimpanan / update data</string>
+    <string name="srError403">Data tidak dikenali, Data tidak dapat mengakses sistem (Token Expired, Non-active)</string>
+    <string name="srError404">Data tidak ditemukan</string>
+    <string name="srError406">Data tidak lolos tahap validasi tipe data</string>
+    <string name="srError500">Tidak dapat terhubung ke server, Terjadi kesalahan pada server</string>
+    <string name="srSuccess200">Data berhasil disimpan / diupdate, Data berhasil ditampilkan</string>
+    <string name="srTitleWarningSendAgent">Tunggu Sejenak</string>
+    <string name="srMessageWarningSendAgent">Apakah anda yakin mengirim %1$s untuk pekerjaan ini</string>
+    <string name="srError404Notification">Tidak ada Notifikasi</string>
+    <string name="srError404ReadNotification">Gagal membaca pemberitahuan</string>
+    <string name="srSuccess200DeleteNotification">Sukses, Pemberitahuan di hapus</string>
+    <string name="srError404DeleteNotification">Pemberitahuan gagal dihapus</string>
+    <string name="srSuccess200ReadNotification">Sukses Pemberitahuan telah dibaca</string>
+
+    <string name="srPrivate" tools:ignore="ExtraTranslation">Pribadi</string>
+    <string name="srPublic" tools:ignore="ExtraTranslation">Publik</string>
+    <string name="srConcurrentVerfificationToTheSameNumberAreNotAllowed" tools:ignore="ExtraTranslation">Verifikasi pada nomor yang sama dalam waktu singkat tidak diperbolehkan</string>
+    <string name="srCodeVerificationWrong" tools:ignore="ExtraTranslation">Kode verifikasi salah</string>
+
+    <string name="srHelpFinish" tools:ignore="ExtraTranslation">Bantuan Selesai</string>
+
+    <string name="srAgentStatusNotActive" tools:ignore="ExtraTranslation">Status agen tidak aktif, mohon kontak admin</string>
+    <string name="srAgentBlockedNotActive" tools:ignore="ExtraTranslation">Agen diblokir, mohon kontak admin</string>
+    <string name="srWorkerStatusNotActive" tools:ignore="ExtraTranslation">Status buruh tidak aktif, mohon kontak admin</string>
+    <string name="srWorkerBlockedNotActive" tools:ignore="ExtraTranslation">Buruh diblokir, mohon kontak admin</string>
+
+    <string name="srUserIdNotActive" tools:ignore="ExtraTranslation">ID pengguna anda tidak aktif</string>
+    <string name="srUserIdBlocked" tools:ignore="ExtraTranslation">ID pengguna anda terkunci</string>
+    <string name="srPleaseContact" tools:ignore="ExtraTranslation">Mohon hubungi</string>
+    <string name="srOrCall" tools:ignore="ExtraTranslation">atau telepon</string>
+    <string name="srOr" tools:ignore="ExtraTranslation">atau</string>
+    <string name="srCall" tools:ignore="ExtraTranslation">hubungi</string>
+    <string name="srOrCallFieldTradeUnionRelated" tools:ignore="ExtraTranslation">atau Serikat Pekerja Kebun (PUK) terkait</string>
+    <string name="srAreYouSureLost">Data yang tidak di save akan hilang</string>
+
+    <string name="srPleaseInput4DigitsVerificationCode">Mohon masukkan kode verifikasi yang dikirimkan berupa 4 nomor</string>
+
+    <string name="srSorryUserDontHaveAccessCreateHelp">Maaf user tidak memiliki akses untuk membuat bantuan, mohon ajukan diri anda menjadi anggota serikat kerja</string>
+
+    <string name="srResendOtpSuccess">Pengiriman ulang Kode Otentikasi berhasil</string>
+    <string name="srPleaseWait">Mohon menunggu</string>
+    <string name="srSelectAction">Pilih Aksi</string>
+    <string name="srPleaseLoginToAccessFullFeature">Silahkan Log In untuk mengakses fitur lebih lengkap</string>
+    <string name="srLifeTime">Seumur Hidup</string>
+
+    <string name="srJan">JAN</string>
+    <string name="srFeb">FEB</string>
+    <string name="srMar">MAR</string>
+    <string name="srApr">APR</string>
+    <string name="srMay">MEI</string>
+    <string name="srJun">JUN</string>
+    <string name="srJul">JUL</string>
+    <string name="srAug">AGU</string>
+    <string name="srSep">SEP</string>
+    <string name="srOct">OKT</string>
+    <string name="srNov">NOV</string>
+    <string name="srDes">DES</string>
+    <string name="srLower"><![CDATA[<]]></string>
+    <string name="srHigher"><![CDATA[>]]></string>
+    <string name="srYear">Tahun</string>
+    <string name="srYourNIK">NIK Anda</string>
+    <string name="srYourName">Nama anda</string>
+    <string name="srPlaceBirthdate">Tempat/Tgl. Lahir</string>
+
+    <string name="srSuccessUpdateKtp">Sukses memperbaharui data KTP</string>
+
+    <string name="srKTPValid" >KTP valid</string>
+    <string name="srKTPInvalid">Gambar tidak terdeteksi sebagai KTP</string>
+    <string name="srPleaseFillNik">Mohon isi data NIK dengan data valid</string>
+    <string name="srPleaseFillBirthPlace">Mohon isi data tempat lahir</string>
+    <string name="srPleaseFillBirthDate">Mohon isi tanggal lahir</string>
+    <string name="srPleaseFillAddress">Mohon isi alamat</string>
+    <string name="srPleaseFillRt">Mohon isi RT</string>
+    <string name="srPleaseFillRw">Mohon isi data RW</string>
+    <string name="srPleaseSelectProvince">Mohon pilih provinsi</string>
+    <string name="srPleaseSelectReligition">Mohon pilih agama</string>
+    <string name="srPleaseSelectMarriedStatus">Mohon pilih status perkawinan</string>
+    <string name="srPleaseSelectJob">Mohon pilih pekerjaan</string>
+    <string name="srPleaseSelectKtpExpired">Mohon isi tanggal berlaku KTP</string>
+    <string name="srPleaseFillName">Mohon isi nama</string>
+    <string name="srPleaseFillYourIdCard">Mohon isi foto ktp anda</string>
+
+    <string name="srSelectReligion">Pilih Agama</string>
+    <string name="srSelectMarriedStatus">Pilih status perkawinan</string>
+    <string name="srSelectJob">Pilih pekerjaan</string>
+    <string name="srPleaseFillNoKk">Mohon isi nomor kartu keluarga dengan data valid</string>
+    <string name="srPleaseFillKkPhoto">Mohon isi foto KK</string>
+    <string name="srPleaseFillNpwpPhoto">Mohon isi foto NPWP</string>
+    <string name="srPleaseFillNpwpNumber">Mohon isi nomor NPWP dengan data valid</string>
+    <string name="srPleaseFillBpjsPhoto">Mohon isi foto BPJS</string>
+    <string name="srPleaseFillBpjsNumber">Mohon isi data bpjs dengan data valid</string>
+    <string name="srPleaseFillSkckPhoto">Mohon isi foto SKCK</string>
+    <string name="srPleaseFillSkckNumber">Mohon masukkan nomor SKCK</string>
+    <string name="srPleaseFillSkckValidDate">Mohon masukkan tanggal berlaku SKCK</string>
+    <string name="srValidTo">Berlaku hingga</string>
+    <string name="srSkckNo">Nomor Skck</string>
+    <string name="srPleaseFillRecomendationLetter">Mohon isi surat rekomendasi</string>
+    <string name="srNominalSalary">Nominal Gaji</string>
+    <string name="srPleaseInsertPhoneNo">Mohon masukkan nomor telepon</string>
+    <string name="srPleaseInputEmail">Mohon masukkan email</string>
+
+    <string name="srFailedToDeleteExperienceData">Gagal menghapus data pengalaman kerja</string>
+
+    <string name="srNoUpdate">Tidak ada update</string>
+    <string name="srNow">Sekarang</string>
+    <string name="srAttachment">Lampiran</string>
+
+    <string name="srToDeleteThisData">Menghapus data ini?</string>
+
+    <string name="srPleaseSelectMonthFirst">"Mohon pilih bulan terlebih dahulu"</string>
+
+    <string name="srCurrency">Rp</string>
+    <string name="srEndDateHistory">Sampai Dengan</string>
+    <string name="srStartFromHistory">Mulai Bekerja</string>
+    <string name="srTillDateEducation">Sampai Dengan</string>
+
+    <string name="srPleaseInputOneOfDataInTheForm">Mohon masukkan salah satu data</string>
+
+    <string name="srHour">jam lalu</string>
+    <string name="srMinute">menit lalu</string>
+    <string name="few_second">"beberapa detik lalu"</string>
+
+    <string name="srYourDataExisted">Data Anda Sudah Terdaftar</string>
+    <string name="srToMakeItEasier">Untuk mempermudah melengkapi data profil, Yotani Niaga ingin menghubungkan ke data profil anda di Serikat Kerja</string>
+    <string name="srYesContinue">Ya, lanjutkan</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+
+    <string name="list_pks">Daftar\nPKS</string>
+    <string name="list_kebun">Daftar\nKebun</string>
+    <string name="report">Laporan</string>
+    <string name="manage_users">Kelola\nPengguna</string>
+    <string name="see_all">Lihat Semua</string>
+    <string name="list_pks_title">Daftar PKS</string>
+    <string name="add_pks">+ Tambah PKS</string>
+    <string name="add_garden">+ Tambah Kebun</string>
+    <string name="add_garden_tab">Tambah kebun</string>
+    <string name="add_farmer_tab">Tambah Petani</string>
+    <string name="edit_farmer_tab">Ubah Petani</string>
+    <string name="transaction">Transaksi</string>
+    <string name="notification">Notifikasi</string>
+    <string name="profile">Profil</string>
+    <string name="palm_in_one_crop">Sawit Sekali Panen</string>
+    <string name="total_tree">Jumlah Pohon</string>
+    <string name="total_tree_mandatory">Jumlah Pohon<font color='#FF0000'>*</font></string>
+    <string name="years_of_plant">Tahun Tanam</string>
+    <string name="years_of_plant_mandatory">Tahun Tanam<font color='#FF0000'>*</font></string>
+    <string name="garden_area">Luas Kebun</string>
+    <string name="garden_area_mandatory">Luas Kebun<font color='#FF0000'>*</font></string>
+    <string name="list_garden_title">Daftar Kebun</string>
+    <string name="soil_condition">Soil Condition</string>
+    <string name="number_of_palms_supplied">Jumlah sawit yang disuplai</string>
+    <string name="export_excel">Export Excel</string>
+    <string name="export_pdf">Export PDF</string>
+    <string name="payment">Pembayaran</string>
+    <string name="delivery">Pengiriman</string>
+    <string name="invoice_pks">Faktur\nPKS</string>
+    <string name="price_ntbs">Harga\nTBS</string>
+    <string name="invoice_nfarmer_group">Invoice\nKelompok Tani</string>
+    <string name="schedule_nfertilization">Jadwal\nPemupukan</string>
+    <string name="schedule_nnursery">Jadwal\nPembibitan</string>
+    <string name="sorting">Urutan</string>
+    <string name="filter">Saring</string>
+    <string name="scheduleFertilizationTitle">Jadwal Pemupukan</string>
+    <string name="listPriceTbs">Daftar Harga TBS</string>
+    <string name="add_schedule">+ Tambah Jadwal</string>
+    <string name="sun">Min</string>
+    <string name="mon">Sen</string>
+    <string name="tue">Sel</string>
+    <string name="wed">Rab</string>
+    <string name="thu">Kam</string>
+    <string name="fri">Jum</string>
+    <string name="sat">Sab</string>
+    <string name="schedule">Jadwal</string>
+    <string name="price">Harga</string>
+    <string name="farmer">Petani</string>
+    <string name="supplier">Pemasok</string>
+    <string name="confirm_new_password">Konfirmasi Kata Sandi<font color='#FF0000'>*</font></string>
+    <string name="location_name_district_subdistrict">Location Name/District/Subdistrict</string>
+    <string name="location_name_district_subdistrict_mandatory">Nama Lokasi/Kecamatan/Kelurahan<font color='#FF0000'>*</font></string>
+    <string name="noIntenetAccess">Intenet Terputus, Mohon periksa kembali koneksi anda</string>
+    <string name="add_transaction">+ Add Transaction</string>
+    <string name="supply_demand">Permintaan/\nPengadaan</string>
+    <string name="invoice">Faktur</string>
+    <string name="reschedule">Jadwal Ulang</string>
+    <string name="list_reservation_tbs_delivery">Daftar Reservasi Pengiriman TBS</string>
+    <string name="add_farmer">+ Tambah Petani</string>
+    <string name="my_garden">Kebun Saya</string>
+    <string name="edit_profile">Ubah Profil</string>
+    <string name="company_name">Nama PT</string>
+    <string name="supplier_company_cv_pt_persero">Perusahaan Supplier (CV/PT/Persero)</string>
+    <string name="address">Alamat</string>
+    <string name="seed_type">Tipe Bibit</string>
+    <string name="reservation_estimation_day">Reservasi Estimasi / Hari</string>
+    <string name="land_status">Status Lahan</string>
+    <string name="certification">Sertifikasi</string>
+    <string name="account_no">No. Rekening</string>
+    <string name="on_behalf_of">Atas Nama</string>
+    <string name="biodata">Biodata</string>
+    <string name="business_entity">Badan Usaha</string>
+    <string name="business_entity_mandatory">Badan Usaha<font color='#FF0000'>*</font></string>
+    <string name="address_mandatory">Alamat<font color='#FF0000'>*</font></string>
+    <string name="garden">Kebun</string>
+    <string name="pks_name">Nama PKS</string>
+    <string name="tonation_estimation_tbs_kg">Estimasi Tonasi TBS (/Kg)</string>
+    <string name="number_plate">Plat Nomor</string>
+    <string name="letter_number_palm_fruit_courier">No. Surat Pengantar Buah Sawit</string>
+    <string name="garden_farmer">Kebun Petani</string>
+    <string name="highest_price">Harga Tertinggi</string>
+    <string name="nearest_distance">Jarak Terdekat</string>
+    <string name="available_quota">Kuota Tersedia</string>
+    <string name="farthest_distance">Jarak Terjauh</string>
+    <string name="lowest_price">Harga Terendah</string>
+    <string name="date">Tanggal</string>
+    <string name="time">Jam</string>
+    <string name="reschedule_deliver_tbs">Reschedule Pengiriman TBS</string>
+    <string name="view_barcode">Lihat QR</string>
+
+    <string name="send_stock_supply">Kirim Persediaan Stok</string>
+    <string name="quota">"kuota "</string>
+    <string name="quota_fill">"kuota terisi "</string>
+    <string name="send_tbs">Kirim TBS</string>
+
+    <string name="send_date">Tanggal Pengiriman <font color='#FF0000'>*</font></string>
+    <string name="send_time">Jam Pengiriman <font color='#FF0000'>*</font></string>
+    <string name="select_garden">Pilih Kebun</string>
+    <string name="total_tonnage">Total Tonase</string>
+    <string name="tonnage_estimation_tbs_per_kg">Estimasi Tonasi TBS (/Kg)</string>
+
+    <string name="total_pay">Total Bayar</string>
+    <string name="total_buy">Total Beli</string>
+
+    <string name="view_garden">Lihat Detail</string>
+    <string name="edit_garden">Ubah Data</string>
+    <string name="delete_garden">Hapus</string>
+    <string name="dd_mm_yyyy">DD/MM/YYYY</string>
+    <string name="hh_mm">HH:MM</string>
+    <string name="not_receive_code_verification">"Tidak Terima Kode? "</string>
+
+    <string name="phone_number_correct_continue_change_password">No. Telpon benar, lanjutkan mengubah kata sandi?</string>
+
+    <string name="btn_next">Selanjutnya</string>
+    <string name="btn_back">Kembali</string>
+    <string name="types_of_seeds">Jenis Bibit</string>
+    <string name="types_of_seeds_mandatory">Jenis Bibit<font color='#FF0000'>*</font></string>
+    <string name="land_conditions">Tipe Lahan</string>
+    <string name="land_conditions_mandatory">Tipe Lahan<font color='#FF0000'>*</font></string>
+    <string name="potential_production_month">Produksi Per Bulan</string>
+    <string name="potential_production_month_mandatory">Produksi Per Bulan<font color='#FF0000'>*</font></string>
+    <string name="image_garden">Foto Kebun</string>
+    <string name="image_garden_mandatory">Foto Kebun<font color='#FF0000'>*</font></string>
+    <string name="legality_document">Dokumen</string>
+    <string name="add_legality_document">Tambah Dokumen Kepemilikan</string>
+    <string name="add_certificate">Tambah Sertifikat</string>
+    <string name="number_document">Nomor Dokumen</string>
+    <string name="photo_document">Foto Dokumen</string>
+    <string name="latest_date">Tanggal Terbaru</string>
+    <string name="oldest_date">Tanggal Terlama</string>
+    <string name="status_in_delivery">Status Dalam Perjalanan</string>
+    <string name="status_factory_in_process">Status Proses Pabrik</string>
+    <string name="not_yet_paid">Belum Bayar</string>
+    <string name="already_paid">Sudah Bayar</string>
+    <string name="already_paid_status">Status Sudah Bayar</string>
+    <string name="not_yet_paid_status">Status Belum Bayar</string>
+
+    <string name="photo_profile">Foto Profil<font color='#FF0000'>*</font></string>
+    <string name="order">Pesanan</string>
+    <string name="bank">Bank</string>
+    <string name="bank__account_name">Atas Nama</string>
+    <string name="bank_account_number">No Rekening</string>
+    <string name="srTitleDialogCamera">Pilih Aksi</string>
+    <string name="choose_Pict_gallery">Ambil Gambar dari Galeri</string>
+    <string name="choose_Pict_photo">Ambil foto dari kamera</string>
+
+    <string name="sorry_invalid_password">Maaf password salah, mohon cek password anda</string>
+    <string name="check_again">Periksa Kembali</string>
+    <string name="sorry_seems_like_your_password_incorrect">Sepertinya ada ketidaksamaan pada kata sandi anda</string>
+    <string name="seems_like_there_is_no_equivalent_between_phone_number_and_password">Sepertinya ada ketidaksamaan pada no.telepon dan kata sandi</string>
+    <string name="phone_number_not_registered">No. Telepon Belum Terdaftar</string>
+    <string name="continue_register_with_this_phone_number">Lanjut Daftar dengan No. Telepon Ini?</string>
+    <string name="new_password">Kata Sandi Baru</string>
+    <string name="input_new_password">Masukkan kata sandi baru</string>
+    <string name="password_format">Format Kata Sandi</string>
+    <string name="password_same">Kata Sandi Sama</string>
+    <string name="minimum_password_8_characters">Kata sandi minimal 8 karakter</string>
+    <string name="at_least_1_letter_and_number">Minimal 1 huruf dan angka</string>
+    <string name="note">Catatan</string>
+    <string name="search_news">Cari Berita</string>
+    <string name="search_title_keyword_of_the_news">Cari Judul Berita / Kata Kunci Berita</string>
+    <string name="sorry_you_have_to_complete_your_address_first">Maaf, anda harus melengkapi alamat anda terlebih dahulu</string>
+    <string name="register_success">Pendaftaran Berhasil</string>
+    <string name="now_you_can_login">Sekarang anda bisa masuk</string>
+    <string name="password_must_contain_minimum_8_character_alphanumeric">Kata sandi harus terdiri atas minimal 8 digits alfa numerik</string>
+    <string name="sorry_you_have_to_check_term_and_condition">Maaf, anda harus setuju dengan syarat dan ketentuan terlebih dahulu</string>
+    <string name="sending_stock">Mengirim persediaan</string>
+    <string name="reschedule_success">Pengiriman Ulang Berhasil</string>
+    <string name="please_fill_date">Mohon isi tanggal terlebih dahulu</string>
+    <string name="please_fill_time">Mohon isi jam terlebih dahulu</string>
+    <string name="please_fill_tonage_estimation">Mohon isi estimasi tonasi terlebih dahulu</string>
+    <string name="success">Sukses</string>
+    <string name="profile_updated">Profile Updated</string>
+    <string name="coordinate">Titik Koordinasi</string>
+    <string name="coordinate_mandatory">Titik  Koordinasi<font color='#FF0000'>*</font></string>
+    <string name="selectLandCondition">Pilih Kondisi Lahan</string>
+    <string name="selectCropType">Pilih Bibit</string>
+
+    <string name="certificate_type">Tipe Sertifikasi</string>
+    <string name="certificate_type_mandatory">Tipe Sertifikasi<font color='#FF0000'>*</font></string>
+    <string name="certificate_nomor">Nomor Sertifikasi</string>
+    <string name="certificate_nomor_mandatory">Nomor Sertifikasi<font color='#FF0000'>*</font></string>
+    <string name="validity_period">Masa Berlaku</string>
+    <string name="validity_period_mandatory">Masa Berlaku<font color='#FF0000'>*</font></string>
+    <string name="from_date">Dari Tanggal</string>
+    <string name="to_date">Sampai Tanggal</string>
+    <string name="upload_certificate">Unggah Sertifikat</string>
+    <string name="upload_certificate_mandatory">Unggah Sertifikat<font color='#FF0000'>*</font></string>
+    <string name="certificate_garden">Sertifikasi</string>
+    <string name="selectCertificateType">Pilih Tipe Sertifikat</string>
+    <string name="srAdd">Tambah</string>
+    <string name="farmer_profile">Farmer Profile</string>
+    <string name="farmer_added">Farmer Added</string>
+    <string name="farm_added">Farm Added</string>
+    <string name="farm_updated">Farm Updated</string>
+    <string name="srConfirmationMessage">Apakah Anda yakin ?</string>
+    <string name="field_is_required">Kolom wajib diisi</string>
+    <string name="field_is_required_idcard">Kolom wajib diisi dan nomor KTP antara 15 dan 16 angka</string>
+    <string name="field_is_required_npwp">Kolom wajib diisi dan NPWP harus 15 angka</string>
+
+    <string name="owned_land">Kebun yang Dimiliki</string>
+    <string name="enter_farmer_mobile_phone">Masukkan nomor telepon petani</string>
+    <string name="coordinate_location">Titik Koordinat</string>
+    <string name="bank__account_name_mandatory">Atas Nama<font color='#FF0000'>*</font></string>
+    <string name="bank_account_number_mandatory">Nomor Rekening<font color='#FF0000'>*</font></string>
+    <string name="bank_mandatory">Bank<font color='#FF0000'>*</font></string>
+
+    <string name="religion_mandatory">Religion<font color='#FF0000'>*</font></string>
+    <string name="education_mandatory">Pendidikan<font color='#FF0000'>*</font></string>
+    <string name="profession_mandatory">Profesi<font color='#FF0000'>*</font></string>
+    <string name="field_of_work_mandatory">Bidang Pekerjaan<font color='#FF0000'>*</font></string>
+    <string name="work_experience_mandatory">Pengalaman Kerja<font color='#FF0000'>*</font></string>
+    <string name="marital_mandatory">Status Pernikahan<font color='#FF0000'>*</font></string>
+    <string name="online_work_mandatory">Kerja berbasis Internet<font color='#FF0000'>*</font></string>
+    <string name="income">Gaji</string>
+    <string name="income_mandatory">Gaji<font color='#FF0000'>*</font></string>
+    <string name="total_aset">Total Aset</string>
+    <string name="total_aset_mandatory">Total Aset<font color='#FF0000'>*</font></string>
+    <string name="home_ownership_mandatory">Memiliki Rumah ?<font color='#FF0000'>*</font></string>
+    <string name="gender_mandatory">Jenis Kelamin<font color='#FF0000'>*</font></string>
+
+    <string name="email">Email</string>
+    <string name="email_mandatory">Email<font color='#FF0000'>*</font></string>
+    <string name="id_card">No. KTP</string>
+    <string name="id_card_mandatory">No. KTP<font color='#FF0000'>*</font></string>
+    <string name="id_card_photo_mandatory">Foto KTP<font color='#FF0000'>*</font></string>
+    <string name="kk_photo_mandatory">Foto KK<font color='#FF0000'>*</font></string>
+    <string name="npwp">NPWP</string>
+    <string name="npwp_mandatory">NPWP<font color='#FF0000'>*</font></string>
+    <string name="kk">No. KK</string>
+    <string name="kk_mandatory">No. KK<font color='#FF0000'>*</font></string>
+    <string name="male">Laki-laki</string>
+    <string name="female">Perempuan</string>
+    <string name="birthplace">Tempat Lahir</string>
+    <string name="birthplace_mandatory">Tempat Lahir<font color='#FF0000'>*</font></string>
+    <string name="birthdate_mandatory">Tanggal Lahir<font color='#FF0000'>*</font></string>
+    <string name="sudah_nikah">Sudah Nikah</string>
+    <string name="belum_nikah">Belum Nikah</string>
+    <string name="online">Internet</string>
+    <string name="offline">Tidak Internet</string>
+    <string name="home_owner">Ya Memiliki</string>
+    <string name="home_not_owner">Belum Memiliki</string>
+    <string name="farmer_address">Alamat Petani</string>
+    <string name="farmer_domicile">Domisili Petani</string>
+    <string name="sesuai_ktp">Sesuai KTP</string>
+    <string name="srSelectEducation">Pilih Pendidikan</string>
+    <string name="srSelectProfesion">Pilih Profesi</string>
+    <string name="srSelectFieldOfWrok">Pilih Bidang Pekerjaan</string>
+    <string name="srSelectWorkEcperience">Pilih Pengalaman Kerja</string>
+    <string name="complete_profile">Silahkan lengkapi data profile Anda</string>
+    <string name="bpjs_tenagakerja">BPJS Ketenagakerjaan</string>
+    <string name="bpjs_tenagakerja_photo">Foto BPJS Ketenagakerjaan</string>
+    <string name="bpjs_kesehatan">BPJS Kesehatan</string>
+    <string name="bpjs_kesehatan_photo">Foto BPJS Kesehatan</string>
+
+</resources>

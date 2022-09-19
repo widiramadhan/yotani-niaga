@@ -1,0 +1,957 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Yo Tani Niaga</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_password_mandatory">Password<font color='#FF0000'>*</font></string>
+    <string name="action_sign_in">Log In</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="srTitleMyApplication">My Application</string>
+    <string name="srTitleChangePasswordProfile">Change Password</string>
+    <string name="srExpectedSalaryValue">Rp %1$s</string>
+    <string name="action_settings">Settings</string>
+    <string name="get_token_sms">Hi, from Yo Tani. Your token is </string>
+    <string name="register">Register</string>
+    <string name="verification_code_has_sent_to">A verification code has been sent to the number</string>
+    <string name="please_type_the_verification_code_sent_to">Please type the verification code sent to</string>
+    <string name="validate">Validate</string>
+    <string name="please_request_new_token">Please request new token</string>
+    <string name="phone_no">Phone No</string>
+    <string name="seconds_remaining">Seconds remaining</string>
+    <string name="second_remaining">Second remaining</string>
+    <string name="get_new_token">Get New Token</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow" translatable="false">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="notification_listener_service" translatable="false">"Notification Listener Service"</string>
+    <string name="notification_listener_service_explanation" translatable="false">"For the the app. to work you need to enable the Notification Listener Service. Enable it now?"</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="page_position" translatable="false">Page %1$d</string>
+
+    <string name="item_position" translatable="false">Item %1$d</string>
+    <string name="first_rv" translatable="false">Horizontal RecyclerView</string>
+    <string name="second_rv">Vertical RecyclerView</string>
+    <string name="srChangePassword">Change Password</string>
+    <string name="srNewPassword">New Password</string>
+    <string name="srHintNewPassword">Input new Password</string>
+    <string name="srTxtBtnContinue">Continue</string>
+    <string name="srTitleSuccess">Was successful</string>
+    <string name="srMessageSuccess">New Password Successfully Updated</string>
+    <string name="srMessageSuccessCallUs">Data Sent Successfully</string>
+    <string name="srGoToLoginFromDialog">Login Now</string>
+    <string name="srTitleDenied">Check Again</string>
+    <string name="srReturn">Back</string>
+    <string name="registered_password">Registered Password</string>
+    <string name="please_login_to_access_full_feature">Please Log In to access full feature</string>
+    <string name="srConfirmNewPasswordChangPassword">Confirm New Password</string>
+
+    <string name="remember_me">Remember me</string>
+
+    <string name="forgot_password">Forgot Password</string>
+    <string name="did_not_have_account">"You don\'t have account? "</string>
+    <string name="copyright">Copyright 2019 </string>
+    <string name="srLblBtnRegister">Register</string>
+
+    <string name="srLblInfomationWillSendMessage">We will send an SMS verification code</string>
+
+    <string name="please_enter_phone_number_registered_in_yotani_kerja">Please enter phone number registered in YoTani Niaga</string>
+
+    <string name="registered_phone">Registered Phone</string>
+    <string name="continue_text">Continue</string>
+
+    <!--Home-->
+    <string name="opening_statement">WELCOME</string>
+    <string name="result_search">Searching Result</string>
+    <string-array name="tampilkan">
+        <item>5 Data</item>
+        <item>10 Data</item>
+        <item>15 Data</item>
+        <item>20 Data</item>
+        <item>25 Data</item>
+        <item>30 Data</item>
+    </string-array>
+    <string name="detail_notif">Complete Info</string>
+
+
+    <string name="srConfirmationRegister">Are the numbers you entered correct?</string>
+
+    <string name="srTxtBtnNegative">No, change</string>
+    <string name="srTxtBtnPositive">Yes, right</string>
+
+    <string name="srTxtBtnConfirm">Confirmation</string>
+    <string name="srTxtBtnCancel">Cancel</string>
+
+    <string name="srErrorPhoneNo">Please enter your registered telephone number</string>
+    <string name="srErrorPhoneNoNotRegistered">Please insert your phone number</string>
+    <string name="number">0812-1234-5678</string>
+    <string name="srInputVerificationCode">Input verification code</string>
+    <string name="verification">Verification</string>
+    <string name="srMessageDenied">There seems to be an inequality in the password</string>
+
+    <string name="srDrawerHome">Home</string>
+    <string name="srDrawerProfile">Profile</string>
+    <string name="srDrawerCareer">Career</string>
+    <string name="srDrawerFriend">Friend</string>
+    <string name="srDrawerTradeUnion">Trade Union</string>
+    <string name="srDrawerBPJSKetenagakerjaan">BPJS Ketenagakerjaan</string>
+    <string name="srDrawerHelp">Help</string>
+    <string name="srDrawerLogout">Log Out</string>
+    <string name="srAreYouSureLost">Unsaved data will be lost!</string>
+    <string name="srSure">ARE YOU SURE</string>
+    <string name="srToLogout">Want to Log Out?</string>
+    <string name="srKTPValid">KTP Valid</string>
+    <string name="srKTPInvalid">KTP Invalid</string>
+    <string name="srCancel">Cancel</string>
+    <string name="srLogOut">Log Out</string>
+
+    <string name="srToChangeLanguage">Want to change language?</string>
+    <string name="srChangingLanguage">Changing language</string>
+    <string name="srYes">Yes</string>
+
+    <string name="title_toolbar_notif">Notifikasi</string>
+    <string name="title_toolbar_News">News</string>
+    <string name="refresh_notif">Show More</string>
+    <string name="titleToolbarTradeUnionFilterResult">Search Result</string>
+
+    <string name="srListHelp">List Help</string>
+    <string name="srSearchHelp">Search Help</string>
+
+    <string name="srProfile">Profile</string>
+
+    <string name="srNeedMoreHelp">Need More Help?</string>
+    <string name="srCallUs">Call Us</string>
+
+    <string name="srDetailProblem">Detail Problem</string>
+    <string name="srDescription">Description</string>
+    <string name="news_palm">Palm News</string>
+    <string name="news">News</string>
+    <string name="silahkan_log_in_untuk_mengakses_fitur_lebih_lengkap">Silahkan masuk untuk mengakses fitur lebih lengkap</string>
+
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="titleToolbarHelp">Help</string>
+
+    <string name="hastag_help">#Staffing</string>
+    <string name="ticket_help">Ticket</string>
+    <string name="hint_search_help">Search Help</string>
+
+    <string name="text_button_add_question">Add Question</string>
+    <string name="text_list_help">List Help</string>
+    <string name="button_help_answer">Reply</string>
+
+    <string name="srTxtOldPassword">Masukan kata sandi lama</string>
+    <string name="srErrorTextInputPassword">cek kembali kata sandi anda</string>
+    <string name="cancel_application_item_action">Cancel Application</string>
+
+    <string name="please_wait_processing_your_request">Please wait Processing your request</string>
+    <string name="loading">Loading</string>
+    <string name="title">Title</string>
+
+    <string name="hint_write_message">Write Message</string>
+    <string name="lable_fullname_Help">Name</string>
+    <string name="lable_email_Help">Email</string>
+    <string name="lable_phonenumber_Help">No.Hp</string>
+    <string name="lable_information_Help">Infomation</string>
+    <string name="hint_image_Help_Detail">Click Picture to zoom</string>
+
+    <string name="srName">Name</string>
+    <string name="srNameMandatory">Name<font color='#FF0000'>*</font></string>
+    <string name="srEmail">Email</string>
+    <string name="description">Description</string>
+    <string name="phoneNo">Phone No</string>
+    <string name="phoneNoMandatory">Phone No<font color='#FF0000'>*</font></string>
+    <string name="attachment">Attachment</string>
+    <string name="upload">Upload</string>
+    <string name="send">Send</string>
+    <string name="welcomeToYotaniKerja">Welcome to YoTani Niaga</string>
+    <string name="pleaseCompleteYourData">Please complete your data</string>
+    <string name="pleaseCompleteNotification">Are you sure?</string>
+
+    <string name="worker">Worker</string>
+    <string name="agent">Agent</string>
+    <string name="inputYourName">Input your name</string>
+    <string name="inputYourPhoneNo">Input your phone number</string>
+    <string name="inputYourPassword">Input your password</string>
+    <string name="back">Back</string>
+    <string name="workingSamePosition">Im still working in a same position</string>
+    <string name="choose2">Choose</string>
+    <string name="srCamera">Camera</string>
+    <string name="srGallery">Gallery</string>
+    <string name="srOk">Ok</string>
+
+    <string name="srSeeProfile">Profile</string>
+    <string name="srOnlineTest">Online Test</string>
+    <string name="srJobVacancy">Job Vacancy</string>
+    <string name="srAnggota">Member</string>
+    <string name="srMyApplication">My Application</string>
+    <string name="srJobOffers">Job Offers</string>
+
+    <string name="srTitleContactInforJobOffer">Contact Info</string>
+    <string name="srLblMobilePhoneJobOffer">Mobile Phone</string>
+    <string name="srLblEmailJobOffer">Email</string>
+    <string name="srLblTitleWorkExperienceJobOffer">Work Experience</string>
+    <string name="srLblPositionJobOffer">Position</string>
+    <string name="srLblCompanyNameJobOffer">Company</string>
+    <string name="srLblEmployeeTypelJobOffer">Employee Type</string>
+    <string name="srLblWorkPeriodlJobOffer">Work Period</string>
+    <string name="srLblAttachmentJobOffer">Attachment</string>
+    <string name="srLblTitleEducationJobOffer">Education</string>
+    <string name="srLblTitleSkillsJobOffer">Skills</string>
+    <string name="srLblTitleExpectedSalaryJobOffer">Expected salary</string>
+    <string name="srLblSchoolNameJobOffer">Sekolah</string>
+    <string name="srLblDegreeJobOffer">Degree</string>
+    <string name="srLblFieldOfStudyJobOffer">Field Of Study</string>
+    <string name="srLblYearOfStudyJobOffer">Year Of Study</string>
+    <string name="srLblInformationMoreStudyJobOffer">More Information</string>
+    <string name="srSendApplication">Send Application</string>
+    <string name="srApply">Apply</string>
+    <string name="srlblLocation">Location</string>
+    <string name="srLblJobStatus">Job Status</string>
+    <string name="srLblIndusty">Industry</string>
+    <string name="srLblCondrition">Condition</string>
+    <string name="srLblJobDescription">Job Description</string>
+    <string name="srLblJobDetails">Job Details</string>
+
+    <string name="srInvalidUsernameOrPassword">Invalid phone number or password</string>
+    <string name="srUserNotFound">User not found</string>
+    <string name="srJobVacancyLowonganPekerjaan">Job Vacancy</string>
+    <string name="srWelcome">SELAMAT DATANG</string>
+    <string name="srServerError">Server Error</string>
+
+    <!--
+     Profile
+ -->
+
+    <string name="profileKelengkapanData">Data Completion</string>
+    <string name="profileInformasiUmum">Public Information</string>
+    <string name="profileKTPNonMandatory">ID Card</string>
+    <string name="profileKTP">ID Card  <font color='#FF0000'>*</font> </string>
+    <string name="profileScanOCR" translatable="false">Pindai KTP</string>
+    <string name="profileProvinsi">Province <font color='#FF0000'>*</font></string>
+    <string name="profileNIK">NIK</string>
+    <string name="profileNama">Name</string>
+    <string name="profileNamaMandatory">Name<font color='#FF0000'>*</font></string>
+    <string name="profileTempatLahir">Place of Birth*</string>
+    <string name="profileTanggalLahir">Date of Birth*</string>
+    <string name="profileTempatTanggalLahir">Birth Place And Date</string>
+
+    <string name="profileEndDate">End Date</string>
+    <string name="profileStartDate">Start Date</string>
+    <string name="profilePlaceholderMMYYY" translatable="false">mm/yyyy</string>
+    <string name="profileSimpan">Save</string>
+    <string name="profileBatal">Cancel</string>
+
+    <string name="profileEdukasiDeskripsi">Additional Info</string>
+
+    <string name="profileAlamat">Address<font color='#FF0000'>*</font></string>
+    <string name="profileRT" translatable="false">RT <font color='#FF0000'>*</font></string>
+    <string name="profileRW" translatable="false">RW <font color='#FF0000'>*</font></string>
+    <string name="profileKelurahan">Urban Village <font color='#FF0000'>*</font></string>
+    <string name="profileKecamatan">Sub-District <font color='#FF0000'>*</font></string>
+    <string name="profileKabupaten">District / Regency <font color='#FF0000'>*</font></string>
+    <string name="profileKodePos">Zip Code <font color='#FF0000'>*</font></string>
+    <string name="profileHint">Please input any information</string>
+    <string name="profileReglion">Religion</string>
+    <string name="profileStatusMarriage">Status Marriage</string>
+    <string name="profileKerjaan">Job</string>
+    <string name="profileKewarganegaraan">Citizenship</string>
+    <string name="profileBerlakuHingga">Valid Until</string>
+
+    <string name="profileKartuKeluarga">Family Card</string>
+    <string name="profileScan" translatable="false">Scan</string>
+    <string name="profileNoKartuKeluarga">Family Card Number</string>
+
+    <string name="profileNPWP">Tax ID</string>
+    <string name="profileUpload" translatable="false">Upload</string>
+    <string name="profileNoNPWP">Tax ID Number</string>
+
+    <string name="profileBPJS">BPJS of Employment</string>
+    <string name="profileNoBPJS">BPJS of Employment Number</string>
+
+    <string name="profileSKCK" translatable="false">SKCK</string>
+    <string name="profileNoSKCK">SKCK Number</string>
+    <string name="profileSuratRekomendasiDesa">Letter of Recommendation</string>
+
+    <string name="profileContactInfo">Contact Info</string>
+    <string name="profileNoHandphone">Phone Number</string>
+    <string name="profileEmail">Email</string>
+    <string name="profilePhoneNumber">Phone Number<font color='#FF0000'>*</font></string>
+
+    <!-- Pengalaman Kerja -->
+    <string name="profilePengalamanKerja">Job History</string>
+    <string name="profileTambahPengalamanKerja">Add Job History</string>
+    <string name="profilePosisiPengalamanKerja">Position</string>
+    <string name="profileNamaPerusahaanPengalamanKerja">Company</string>
+    <string name="profileTipePengalamanKerja">Employee Type</string>
+    <string name="profilePeriodePengalamanKerja">Period Work</string>
+    <string name="profileDeskripsiPengalamanKerja">Description</string>
+    <string name="profileLampiranPengalamanKerja">Attachment</string>
+    <string name="profileExplanationPengalamanKerja">Im still working here</string>
+    <string name="profileUploadBtnPengalamanKerja">Upload</string>
+
+
+    <!-- Education  -->
+    <string name="profileEdukasi">Education</string>
+    <string name="profileTambahEdukasi">Add Education</string>
+    <string name="profileSekolahEdukasi">School / University</string>
+    <string name="profileGelarEdukasi">Degree</string>
+    <string name="profileBidangStudiEdukasi">Field of Study</string>
+    <string name="profileInformasiTambahan">Additional Info</string>
+
+    <!-- Serikat Kerja  -->
+
+    <string name="profileSerikatKerja">Serikat Kerja</string>
+    <string name="profileNamaSerikatKerja" translatable="false">Name of Serikat Kerja</string>
+    <string name="profileTambahSerikatKerja">Add Serikat Kerja</string>
+    <string name="profileKebunSerikatKerja">Garden</string>
+
+    <string name="profileKeterampilan">Skills</string>
+    <string name="profileTambahKeterampilan">Add Skill</string>
+
+    <string name="profileGaji">Salary</string>
+    <string name="profileNominalGaji">Nominal Salary</string>
+
+    <!--Test -->
+    <string name="profileTestAlamatFull" translatable="false">Jalan Pepaya 2 No. 17 RT/RW 012/016, Kelurahan Semper Barat, Kecamatan Cilincing, Jakarta Utara, DKI Jakarta 14130</string>
+
+
+    <!--    jobvacancy / penawaran kerja-->
+    <string name="srAroundExpectedSalary">Around expected salary</string>
+    <string name="srAboveExpectedSalary">Above expected salary</string>
+    <string name="srBelowExpectedSalary">Below expected salary</string>
+    <string name="srPleaseSignInToSeeSalary">Please sign in to see salary</string>
+    <string name="selengkapnya">Selengkapnya</string>
+
+    <!--    photoview-->
+    <string name="srTitleViewPhoto">View Photo</string>
+
+    <string name="data_empty_message">empty data</string>
+
+    <!--    register worker-->
+    <string name="srErrorPleaseInputFullName">Please input full name</string>
+    <string name="srErrorPleaseInputPassword">Please input your password</string>
+
+    <!-- search -->
+    <string name="srErrorPleaseInputSearchJob">Please input Search Job</string>
+    <string name="srErrorPleaseInputSearchLoc">Please select location by existed data</string>
+
+    <!--    register-->
+    <string name="srPleaseInputYourPhoneNumber">Please input your phone number</string>
+    <string name="srPhoneNumberNotValid" tools:ignore="ExtraTranslation">Phone number minimum 10 digits number</string>
+    <string name="srMasukanNoTelepon">Masukan no telepon</string>
+    <string name="srRegisterAgentSuccess">Your registration as agent success. Please sign in</string>
+    <string name="srRegisterWorkerSuccess">Your registration as worker success. Please sign in</string>
+    <string name="srFailedToRegister">Failed to register, your phone number already exist</string>
+    <string name="srValidatePassword">Please use minimal 8 character alphanumeric</string>
+    <string name="srConfirmation">Confirmation</string>
+    <string name="srConfirmationRegisterWorkerAgent">Are you sure want to register?</string>
+
+
+    <string name="monday_day">Monday</string>
+    <string name="tuesday_day">Tuesday</string>
+    <string name="wednesday_day">Wednesday</string>
+    <string name="thursday_day">Thursday</string>
+    <string name="friday_day">Friday</string>
+    <string name="saturday_day">Saturday</string>
+    <string name="sunday_day">Sunday</string>
+
+    <string name="january_month">January</string>
+    <string name="february_month">February</string>
+    <string name="march_month">March</string>
+    <string name="april_month">April</string>
+    <string name="may_month">May</string>
+    <string name="june_month">June</string>
+    <string name="july_month">July</string>
+    <string name="august_month">August</string>
+    <string name="september_month">September</string>
+    <string name="october_month">October</string>
+    <string name="november_month">November</string>
+    <string name="december_month">December</string>
+
+    <string name="srErrorMessageFiledEmptyOldPassword">Mohon masukan kata sandi lama anda</string>
+    <string name="srErrorMessageFiledEmptyNewPassword">Mohon masukan kata sandi baru anda</string>
+    <string name="srErrorMessageFiledEmptyConfPassword">Mohon masukan kata konfirmasi kata sandi anda</string>
+
+    <string name="srErrorMessageFiledEmpty">tidak boleh kosong</string>
+    <string name="srErrorMessageNotAlphanumericCharacterAppear">Hanya diperbolehkan character alphanumeric</string>
+    <string name="srErrorMessageConfirmPasswordNotSame">Confirm password not match</string>
+
+    <!--    job vacancy-->
+    <string name="srFilter">Filter</string>
+    <string name="srContract">Contract</string>
+    <string name="srWorkAndResponsibility">Work and Responsibility</string>
+    <string name="srAgeLimit">Age Limit</string>
+    <string name="srTotalNeeded">Total Needed</string>
+    <string name="srDeadline">Deadline</string>
+    <string name="srMan">Man</string>
+
+    <!--    company-->
+    <string name="srHeadOffice">Head Office</string>
+    <string name="srCompanyName">Company Name</string>
+    <string name="srCompanyAddress">Company Address</string>
+    <string name="srWebsite">Website</string>
+    <string name="srRegionalOffice">Regional Office</string>
+    <string name="srField">Field</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="srFieldAddress">Field Address</string>
+    <string name="srCompany">Company</string>
+    <string name="srFieldLocation">Field Location</string>
+
+    <string name="lable_radio_button_worker">Worker</string>
+    <string name="lable_radio_button_agent">Agent</string>
+
+    <!--    search-->
+    <string name="srRangeSalary">Range Salary per Month</string>
+    <string name="srMinimal">Minimal</string>
+    <string name="srMaximal">Maximal</string>
+    <string name="srLocationSearch">Location</string>
+    <string name="srJobSearch">Job</string>
+
+    <string name="srValidationSearchMinimalLowerThanMaksmimal">Please make sure minimal salary lower than maximal salary</string>
+
+    <!--    serikat kerja-->
+    <string name="srConfederation">Confederation</string>
+    <string name="srNational">National</string>
+    <string name="srCity">City</string>
+    <string name="srSearch">Search</string>
+
+    <string name="titleTabConfederation">Confederation</string>
+    <string name="titleTabNational">National</string>
+    <string name="titleTabProvince">Province</string>
+    <string name="titleTabCity">City</string>
+    <string name="titleTabField">District</string>
+
+    <string name="titleToolbarFilter">Filter</string>
+    <string name="titleToolbarFilterReset">Reset</string>
+
+    <string name="srTokenInvalid">Token Invalid</string>
+    <string name="srSessionExpiredPleaseLoginAgain">Your session expired, please login again</string>
+
+    <string name="srApplyError">Your application failed to send, please try again later</string>
+    <string name="srApplySuccess">Your application was successfully sent</string>
+
+    <string name="srSomethingWentWrongPleaseTryAgainLater">Something went wrong, please try again later</string>
+    <string name="srToSubmitApplication">Want submit application?</string>
+    <string name="srProcess">Process</string>
+    <string name="srSeeAll">See All</string>
+    <string name="srSortBy">Sort By</string>
+    <string name="srLblSave">Save</string>
+    <string name="srLblReset">Reset</string>
+
+    <string name="srProfileFailedPicture">Picture Failed!</string>
+    <string name="phonNumberExist">Phone Mumber Already Exist</string>
+    <string name="phoneNumberDidntExist">Phone Mumber Did Not Exist</string>
+    <string name="termsAndConditionValidate">You must agree to the terms and conditions that apply</string>
+    <string name="tosFirstLine">I agree with</string>
+    <string name="tosSecondLine">terms and conditions</string>
+    <string name="tosThirdLine"><b><i><font fgcolor="#F26327">Terms and Condition</font></i></b> YoTani Niaga application</string>
+
+
+    <string name="warning">Warning </string>
+    <string name="error">Error</string>
+    <string name="srJobFound">Pekerjaan Ditemukan</string>
+    <string name="ops_maaf_pekerjaan_yang_anda_cari_belum_ada">Ops maaf, pekerjaan yang anda cari belum ada</string>
+    <string name="srExperienceLevel">Experience Level</string>
+    <string name="srPleaseInputRegisteredPhoneNo">Please insert registered phone number</string>
+    <string name="srPleaseInputPassword">Please input your password</string>
+
+    <string name="srPleaseEnterValidPhoneNumber">Please enter valid phone number</string>
+
+    <!--    loading-->
+    <string name="srLoading">Loading</string>
+
+    <string name="srAreYouSureCancelApplication">Are you sure want to cancel application?</string>
+    <string name="srApplicationAlreadyCanceled">Your application already canceled</string>
+    <string name="srApplicationSuccessCanceled">Your application successfully cancel</string>
+    <string name="srHelpCategory">Kategori Bantuan</string>
+
+    <string name="srDeleteNotification">Delete Notification</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="srCarreer">Carreer</string>
+    <string name="srTermsAndCondition">Syarat dan Ketentuan</string>
+
+    <string name="srMessageSuccessSubmitTicket">Ticket create successfully</string>
+    <string name="srPleaseSelectCategory">Please select category</string>
+
+    <string name="srApplyErrorAlreadySend">Your already submit this application</string>
+    <string name="srPleaseFillDesctioption">Please fill description</string>
+
+    <string name="srSelectPhotoFromGallery">Select photo from gallery</string>
+    <string name="srCapturePhotoFromCamera">Capture photo from camera</string>
+    <string name="srHelpFilter">Filter Bantuan</string>
+    <string name="srChooseHelpCategory">Pilih Kategori</string>
+
+    <string name="srChooseStatusCategory">Pilih Status</string>
+
+    <string name="srStartDateHaveLowerThanEndDate">"Tampilkan dari tidak boleh lebih besar dari Sampai"</string>
+
+    <string name="profileNewGallery">From a Gallery</string>
+    <string name="profileNewPictures">Take a Picture</string>
+    <string name="ops_maaf_pekerjaan_yang_anda_filter_belum_ada">Ops maaf, pekerjaan yang anda filter belum ada</string>
+
+    <string name="srSelectConfederation">Select Confederation</string>
+    <string name="srSelectNational">Select National</string>
+    <string name="srSelectProvince">Select Province</string>
+    <string name="srSelectCity">Select City</string>
+    <string name="srSelectField">Select Field</string>
+    <string name="srSelectBank">Select Bank</string>
+    <string name="srSelectBusiness">Select Business Entity</string>
+
+    <string name="srPleaseSelectConfederationFirst">Please select confederation first</string>
+
+    <string name="srSelectDistrict">Select District</string>
+    <string name="srSelectSubDistrict">Select Sub district</string>
+
+    <string name="srProvince">Provinsi</string>
+
+    <string name="srMembers">Members</string>
+    <string name="srSendMembers">Send Members</string>
+    <string name="srCancelMembers">Cancel Members</string>
+    <string name="nama_anggota_no_posisi_lokasi">Search by Name / Position / Location</string>
+    <string name="srPosition">Posisi</string>
+    <string name="srLocation">Location</string>
+    <string name="srSearchPosition">Search by Position</string>
+    <string name="srSearchLocation">Search by Location</string>
+    <string name="google_maps_key_release" templateMergeStrategy="preserve" translatable="false">AIzaSyD0KiZnNUri8tabdoOvkItVCoj4X9vbpJw</string>
+    <string name="srToSendMemberApplyJob">Send this member to apply this job?</string>
+    <string name="srToCancelMemberApplyJob">Cancel this member to apply this job?</string>
+    <string name="srAcceptInvitation">Lihat Lamaran</string>
+    <string name="srDeclineInvitation">Tolak Lamaran</string>
+
+    <string name="invitation_success_to_decline">Invitation success to decline</string>
+
+    <string name="srConfirmationDeclineInvitation">Are you sure want to decline invitation?</string>
+
+    <string name="srJobClosed">Job Closed</string>
+
+    <!--    my application-->
+    <string name="srApplicationSuccessfullySent">Application Successfully Sent</string>
+    <string name="srApplicationAlreadyReview">Application Already Reviewed</string>
+    <string name="srApplicationIsBeingReviewed">Application is being reviewed</string>
+    <string name="srApplicationCanceled">Application Canceled</string>
+    <string name="srApplicationDenied">Lamaran Ditolak</string>
+    <string name="srWelcomeTo">Welcome To</string>
+    <string name="srNoAnggota">Member No :</string>
+    <string name="srNameHeader">Nama :</string>
+    <string name="srApplicationInProses">Application in process</string>
+    <string name="srApplicationReceived">Application received</string>
+
+    <string name="srSuccessSendMembers">Successfully Send Members</string>
+
+    <string name="srSelectLocation">Select Location</string>
+
+    <string name="srSelectPosition">Select Position</string>
+    <string name="srLblSpinnerLocation">Choose Location</string>
+    <string name="srLblSpinnerPosition">Choose Position</string>
+
+
+    <string name="srSuccessMemberApplied">Success, member applied, please check my application to see detail</string>
+    <string name="srFailedMemberApplied">Failed, member applied</string>
+
+    <string name="srNomorMember">Member ID</string>
+    <string name="srStatusPekerjaan">Work Status</string>
+
+    <string name="srError201">Data cannot be saved because the data is unique and cannot be duplicated</string>
+    <string name="srError202">Data was not moved successfully because there was no change in data from the previous data</string>
+    <string name="srError400">Data type is not appropriate so it fails to save / update data</string>
+    <string name="srError403">Data not recognized, Data cannot be accessed by the system (Expired Token, Non-active)</string>
+    <string name="srError404">Data not found</string>
+    <string name="srError406">Data did not pass data validation type</string>
+    <string name="srError500">Tidak dapat terhubung ke server, Terjadi kesalahan pada server</string>
+    <string name="srSuccess200">Cannot connect to server, An error occurred on the server</string>
+    <string name="srTitleWarningSendAgent">Wait for a while</string>
+    <string name="srMessageWarningSendAgent">Are you sure send %1$s to this job</string>
+
+    <string name="srError404Notification">Notification is Empty</string>
+    <string name="srError404ReadNotification">Read notificatiions failed</string>
+    <string name="srSuccess200ReadNotification">Successful Notification has been read</string>
+    <string name="srSuccess200DeleteNotification">Success, Notifications deleted</string>
+    <string name="srError404DeleteNotification">Notification failed to delete</string>
+
+    <string name="srPrivate" tools:ignore="ExtraTranslation">Private</string>
+    <string name="srPublic" tools:ignore="ExtraTranslation">Public</string>
+    <string name="srConcurrentVerfificationToTheSameNumberAreNotAllowed" tools:ignore="ExtraTranslation">Concurrent verifications to the same number are not allowed</string>
+    <string name="srCodeVerificationWrong" tools:ignore="ExtraTranslation">Wrong code verification</string>
+
+    <string name="srHelpFinish" tools:ignore="ExtraTranslation">Help Finish</string>
+
+    <string name="srAgentStatusNotActive" tools:ignore="ExtraTranslation">Agent status not active</string>
+    <string name="srAgentBlockedNotActive" tools:ignore="ExtraTranslation">Agent blocked</string>
+    <string name="srWorkerStatusNotActive" tools:ignore="ExtraTranslation">Worker status not active</string>
+    <string name="srWorkerBlockedNotActive" tools:ignore="ExtraTranslation">Worker blocked</string>
+
+    <string name="srUserIdNotActive" tools:ignore="ExtraTranslation">Your User ID Not Active</string>
+    <string name="srUserIdBlocked" tools:ignore="ExtraTranslation">Your User ID locked</string>
+    <string name="srPleaseContact" tools:ignore="ExtraTranslation">Please contact</string>
+    <string name="srOrCall" tools:ignore="ExtraTranslation">or call</string>
+    <string name="srOr" tools:ignore="ExtraTranslation">or</string>
+    <string name="srCall" tools:ignore="ExtraTranslation">call</string>
+
+    <string name="srOrCallFieldTradeUnionRelated" tools:ignore="ExtraTranslation">or call field trade union related</string>
+    <string name="srValidationAlphanumeric" translatable="false">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890" "</string>
+    <string name="srValidationAlphabet" translatable="false">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz" "</string>
+    <string name="srValidationAlphanumericPasswordDigits" translatable="false">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890</string>
+
+    <string name="srPleaseInput4DigitsVerificationCode">Please input 4 digits verification code</string>
+
+    <string name="srSorryUserDontHaveAccessCreateHelp">Sorry user doesn\'t have access to create help. Please submit yourself to join trade union</string>
+    <string name="srResendOtpSuccess">Resend OTP success</string>
+
+    <string name="srPleaseWait">Please wait</string>
+    <string name="srSelectAction">Select Action</string>
+    <string name="srPleaseLoginToAccessFullFeature">Please login to access full feature</string>
+    <string name="srLifeTime">Seumur Hidup</string>
+
+    <string name="srJan">JAN</string>
+    <string name="srFeb">FEB</string>
+    <string name="srMar">MAR</string>
+    <string name="srApr">APR</string>
+    <string name="srMay">MAY</string>
+    <string name="srJun">JUN</string>
+    <string name="srJul">JUL</string>
+    <string name="srAug">AUG</string>
+    <string name="srSep">SEP</string>
+    <string name="srOct">OCT</string>
+    <string name="srNov">NOV</string>
+    <string name="srDes">DES</string>
+    <string name="srLower"><![CDATA[<]]></string>
+    <string name="srHigher"><![CDATA[>]]></string>
+    <string name="srYear">Year</string>
+    <string name="srYourNIK">NIK Anda</string>
+    <string name="srYourName">Nama anda</string>
+    <string name="srPlaceBirthdate">Tempat/Tgl. Lahir</string>
+
+    <string name="srSuccessUpdateKtp">Update KTP data success </string>
+    <string name="srPleaseFillNik">Mohon isi data NIK</string>
+    <string name="srPleaseFillBirthPlace">Mohon isi data tempat lahir</string>
+    <string name="srPleaseFillBirthDate">Mohon isi tanggal lahir</string>
+    <string name="srPleaseFillAddress">Mohon isi alamat</string>
+    <string name="srPleaseFillRt">Mohon isi RT</string>
+    <string name="srPleaseFillRw">Mohon isi data RW</string>
+    <string name="srPleaseSelectProvince">Mohon pilih provinsi</string>
+    <string name="srPleaseSelectReligition">Mohon pilih agama</string>
+    <string name="srPleaseSelectMarriedStatus">Mohon pilih status perkawinan</string>
+    <string name="srPleaseSelectJob">Mohon pilih pekerjaan</string>
+    <string name="srPleaseSelectKtpExpired">Mohon isi tanggal berlaku KTP</string>
+    <string name="srPleaseFillName">Mohon isi nama</string>
+    <string name="srPleaseFillYourIdCard">Mohon isi foto ktp anda</string>
+
+    <string name="srSelectReligion">Pilih Agama</string>
+    <string name="srSelectMarriedStatus">Pilih Status Perkawinan</string>
+    <string name="srSelectJob">Pilih Pekerjaan</string>
+    <string name="srPleaseFillNoKk" tools:ignore="ExtraTranslation,MissingTranslation">Mohon isi nomor kartu keluarga dengan data valid</string>
+    <string name="srPleaseFillKkPhoto" tools:ignore="MissingTranslation">Mohon isi foto KK</string>
+    <string name="srPleaseFillNpwpPhoto" tools:ignore="MissingTranslation">Mohon isi foto NPWP</string>
+    <string name="srPleaseFillNpwpNumber" tools:ignore="MissingTranslation">Mohon isi nomor NPWP dengan data valid</string>
+    <string name="srPleaseFillBpjsPhoto" tools:ignore="MissingTranslation">Mohon isi foto BPJS</string>
+    <string name="srPleaseFillBpjsNumber" tools:ignore="MissingTranslation">Mohon isi data bpjs dengan data valid</string>
+    <string name="srPleaseFillSkckPhoto" tools:ignore="MissingTranslation">Mohon isi foto SKCK</string>
+    <string name="srPleaseFillSkckNumber" tools:ignore="MissingTranslation">Mohon masukkan nomor SKCK</string>
+    <string name="srPleaseFillSkckValidDate" tools:ignore="MissingTranslation">Mohon masukkan tanggal berlaku SKCK</string>
+    <string name="srSkckNo" tools:ignore="MissingTranslation">Nomor Skck</string>
+    <string name="srValidTo" tools:ignore="MissingTranslation">Berlaku hingga</string>
+    <string name="srPleaseFillRecomendationLetter" tools:ignore="MissingTranslation">Mohon isi surat rekomendasi</string>
+    <string name="srNominalSalary" tools:ignore="MissingTranslation">Nominal Gaji</string>
+    <string name="srPleaseInsertPhoneNo" tools:ignore="MissingTranslation">Mohon masukkan nomor telepon</string>
+    <string name="srPleaseInputEmail" tools:ignore="MissingTranslation">Mohon masukkan email</string>
+
+    <string name="srFailedToDeleteExperienceData" tools:ignore="MissingTranslation">Failed to delete experience data</string>
+    <string name="srNoUpdate" tools:ignore="MissingTranslation">No Update</string>
+    <string name="srNow" tools:ignore="MissingTranslation">Sekarang</string>
+    <string name="srAttachment" tools:ignore="MissingTranslation">Lampiran</string>
+
+    <string name="srToDeleteThisData">Delete this data?</string>
+
+    <string name="srPleaseSelectMonthFirst">"Please select month first"</string>
+
+    <string name="srCurrency">Rp</string>
+    <string name="srEndDateHistory">Sampai Dengan</string>
+    <string name="srStartFromHistory">Mulai Bekerja</string>
+    <string name="srTillDateEducation">Sampai Dengan</string>
+
+    <string name="srPleaseInputOneOfDataInTheForm">Please input one of data in form</string>
+
+    <string name="srHour">h ago</string>
+    <string name="srMinute">m ago</string>
+    <string name="few_second">few seconds ago</string>
+
+    <string name="srYourDataExisted">Your data existed</string>
+    <string name="srToMakeItEasier">To make it easier to complete profile data, Yotani Work wants to connect to your profile data in the Work Union</string>
+    <string name="srYesContinue">Yes, continue</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="list_pks">List\nPKS</string>
+    <string name="list_kebun">List\nGarden</string>
+    <string name="report">Report</string>
+    <string name="manage_users">Manage\nUsers</string>
+    <string name="see_all">See All</string>
+    <string name="list_pks_title">List PKS</string>
+    <string name="add_pks">+ Add PKS</string>
+    <string name="transaction">Transaction</string>
+    <string name="notification">Notification</string>
+    <string name="profile">Profile</string>
+    <string name="palm_in_one_crop">Palm in One Crop</string>
+    <string name="total_tree">Total Tree</string>
+    <string name="total_tree_mandatory">Total Tree<font color='#FF0000'>*</font></string>
+    <string name="years_of_plant">Years of plant</string>
+    <string name="years_of_plant_mandatory">Years of plant<font color='#FF0000'>*</font></string>
+    <string name="garden_area">Garden Area</string>
+    <string name="garden_area_mandatory">Garden Area<font color='#FF0000'>*</font></string>
+    <string name="list_garden_title">List Garden</string>
+    <string name="soil_condition">Soil Condition</string>
+    <string name="number_of_palms_supplied">Number of palms supplied</string>
+    <string name="export_excel">Export Excel</string>
+    <string name="export_pdf">Export PDF</string>
+
+    <string name="payment">Payment</string>
+    <string name="delivery">Delivery</string>
+    <string name="invoice_pks">Invoice\nPKS</string>
+    <string name="price_ntbs">Price\nTBS</string>
+    <string name="invoice_nfarmer_group">Invoice\nFarmer Group</string>
+    <string name="schedule_nfertilization">Schedule\nFertilization</string>
+    <string name="schedule_nnursery">Schedule\nNursery</string>
+    <string name="sorting">Sorting</string>
+    <string name="filter">Filter</string>
+    <string name="scheduleFertilizationTitle">Schedule Fertilization</string>
+    <string name="listPriceTbs">List Price TBS</string>
+    <string name="add_schedule">+ Add Schedule</string>
+    <string name="sun">Sun</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="schedule">Schedule</string>
+    <string name="price">Price</string>
+    <string name="farmer">Farmer</string>
+    <string name="supplier">Supplier</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="location_name_district_subdistrict">Location Name/District/Subdistrict</string>
+    <string name="location_name_district_subdistrict_mandatory">Location Name/District/Subdistrict<font color='#FF0000'>*</font></string>
+    <string name="noIntenetAccess">Disconnected Intenet, Please check your connection </string>
+    <string name="add_transaction">+ Add Transaction</string>
+    <string name="supply_demand">Supply/\nDemand</string>
+    <string name="invoice">Invoice</string>
+    <string name="reschedule">Reschedule</string>
+    <string name="list_reservation_tbs_delivery">List Reservation TBS Delivery</string>
+    <string name="add_farmer">+ Add Farmer</string>
+    <string name="add_garden">+ Add Garden</string>
+    <string name="add_garden_tab">Add Garden</string>
+    <string name="add_farmer_tab">Add Farmer</string>
+    <string name="edit_farmer_tab">Edit Farmer</string>
+    <string name="my_garden">My Garden</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="company_name">Company Name</string>
+    <string name="supplier_company_cv_pt_persero">Supplier Company (CV/PT/Persero)</string>
+    <string name="address">Address</string>
+    <string name="seed_type">Seed Type</string>
+    <string name="reservation_estimation_day">Reservation Estimation / Day</string>
+    <string name="land_status">Land Status</string>
+    <string name="certification">Certification</string>
+    <string name="account_no">Account No</string>
+    <string name="on_behalf_of">On Behalf Of</string>
+    <string name="biodata">Biodata</string>
+    <string name="business_entity">Business Entity</string>
+    <string name="business_entity_mandatory">Business Entity<font color='#FF0000'>*</font></string>
+    <string name="address_mandatory">Address<font color='#FF0000'>*</font></string>
+    <string name="garden">Garden</string>
+    <string name="pks_name">PKS Name</string>
+    <string name="tonation_estimation_tbs_kg">Tonation Estimation TBS (/Kg)</string>
+    <string name="number_plate">Number Plate</string>
+    <string name="letter_number_palm_fruit_courier">Letter Number Palm Fruit Courier</string>
+    <string name="garden_farmer">Garden Farmer</string>
+    <string name="highest_price">Highest Price</string>
+    <string name="nearest_distance">Nearest Distance</string>
+    <string name="available_quota">Available Quota</string>
+    <string name="farthest_distance">Farthest Distance</string>
+    <string name="lowest_price">Lowest Price</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="reschedule_deliver_tbs">Reschedule Deliver TBS</string>
+    <string name="view_barcode">View QR</string>
+
+    <string name="send_stock_supply">Send Stock Supply</string>
+    <string name="quota">"quota "</string>
+    <string name="quota_fill">"quota fill "</string>
+    <string name="send_tbs">Send TBS</string>
+
+    <string name="send_date">Send Date<font color='#FF0000'>*</font></string>
+    <string name="send_time">Send Time<font color='#FF0000'>*</font></string>
+    <string name="select_garden">Select Garden</string>
+    <string name="total_tonnage">Total Tonnage</string>
+    <string name="tonnage_estimation_tbs_per_kg">Tonnage Estimation TBS (/Kg)</string>
+    <string name="field_is_required">This field is required</string>
+    <string name="field_is_required_idcard">This field is required and Id card must be beetween 15 and 16 digits</string>
+    <string name="field_is_required_npwp">This field is required and NPWP number must be 15 digits</string>
+
+    <string name="total_pay">Total Pay</string>
+    <string name="total_buy">Total Buy</string>
+
+    <string name="view_garden">View Detail</string>
+    <string name="edit_garden">Edit Data</string>
+    <string name="delete_garden">Delete</string>
+    <string name="dd_mm_yyyy">DD/MM/YYYY</string>
+    <string name="hh_mm">HH:MM</string>
+    <string name="not_receive_code_verification">"Not Receive Code? "</string>
+    <string name="phone_number_correct_continue_change_password">Phone number correct. Are you sure want to contine change password?</string>
+
+    <string name="btn_next">Next</string>
+    <string name="btn_back">Back</string>
+    <string name="types_of_seeds">Types of Seeds</string>
+    <string name="types_of_seeds_mandatory">Types of Seeds<font color='#FF0000'>*</font></string>
+    <string name="land_conditions">Type of Land</string>
+    <string name="land_conditions_mandatory">Type of Land<font color='#FF0000'>*</font></string>
+    <string name="potential_production_month">Production Month</string>
+    <string name="potential_production_month_mandatory">Production Month<font color='#FF0000'>*</font></string>
+    <string name="image_garden">Image of Garden</string>
+    <string name="image_garden_mandatory">Image of Garden<font color='#FF0000'>*</font></string>
+    <string name="legality_document">Document</string>
+    <string name="add_legality_document">Add Document Legality</string>
+    <string name="add_certificate">Add Certificate</string>
+    <string name="number_document">Number Document</string>
+    <string name="photo_document">Photo Document</string>
+    <string name="latest_date">Latest Date</string>
+    <string name="oldest_date">Oldest Date</string>
+    <string name="status_in_delivery">Status in Delivery</string>
+    <string name="status_factory_in_process">Status Factory in Process</string>
+    <string name="not_yet_paid">Not Yet Paid</string>
+    <string name="already_paid">Already Paid</string>
+    <string name="already_paid_status">Already Paid Status</string>
+    <string name="not_yet_paid_status">Not Yet Paid Status</string>
+
+    <string name="photo_profile">Photo Profile<font color='#FF0000'>*</font></string>
+    <string name="order">Order</string>
+    <string name="bank">Bank</string>
+    <string name="bank_mandatory">Bank<font color='#FF0000'>*</font></string>
+    <string name="bank__account_name">Bank Account Name</string>
+    <string name="bank_account_number">Bank Account Number</string>
+
+    <string name="srTitleDialogCamera">Select Action</string>
+    <string name="choose_Pict_gallery">Take Image from Gallery</string>
+    <string name="choose_Pict_photo">Capture photo from camera</string>
+
+    <string name="sorry_invalid_password">Sorry, invalid password. Please check you password</string>
+    <string name="check_again">Check Again</string>
+    <string name="sorry_seems_like_your_password_incorrect">Sorry seems like your password incorrect</string>
+    <string name="seems_like_there_is_no_equivalent_between_phone_number_and_password">Sorry, phone_number or password incorrect</string>
+    <string name="phone_number_not_registered">Phone number not registered</string>
+    <string name="continue_register_with_this_phone_number">Continue register with this number?</string>
+    <string name="new_password">New Password</string>
+    <string name="input_new_password">Input new password</string>
+    <string name="password_format">Password Format</string>
+    <string name="password_same">Password Same</string>
+    <string name="minimum_password_8_characters">Minimum password 8 characters</string>
+    <string name="at_least_1_letter_and_number">At least 1 letter and number</string>
+    <string name="note">Note</string>
+    <string name="search_news">Search News</string>
+    <string name="search_title_keyword_of_the_news">Search Title / Keyword of The News</string>
+    <string name="sorry_you_have_to_complete_your_address_first">Sorry, you have to complete your address first</string>
+
+    <string name="register_success">Register Success</string>
+    <string name="now_you_can_login">Now you can login</string>
+    <string name="password_must_contain_minimum_8_character_alphanumeric">Password must contain minimum 8 alphanumeric</string>
+    <string name="sorry_you_have_to_check_term_and_condition">Sorry, you have to agree with terms and condition</string>
+    <string name="sending_stock">Sending Stock</string>
+    <string name="reschedule_success">Reschedule Success</string>
+    <string name="please_fill_date">Please fill date first</string>
+    <string name="please_fill_time">Please fill time first</string>
+    <string name="please_fill_tonage_estimation">Please fill tonage estimation first</string>
+    <string name="success">Success</string>
+    <string name="profile_updated">Profile Updated</string>
+    <string name="coordinate">Coordinate</string>
+    <string name="coordinate_mandatory">Coordinate<font color='#FF0000'>*</font></string>
+    <string name="selectLandCondition">Select Land Condition</string>
+    <string name="selectCropType">Select Crop</string>
+
+    <string name="certificate_type">Certificate Type</string>
+    <string name="certificate_type_mandatory">Certificate Type<font color='#FF0000'>*</font></string>
+    <string name="certificate_nomor">Number Of Certificate</string>
+    <string name="certificate_nomor_mandatory">Number Of Certificate<font color='#FF0000'>*</font></string>
+    <string name="validity_period">Validity Period</string>
+    <string name="validity_period_mandatory">Validity Period<font color='#FF0000'>*</font></string>
+    <string name="from_date">From Date</string>
+    <string name="to_date">To Date</string>
+    <string name="upload_certificate">Upload Certificate</string>
+    <string name="upload_certificate_mandatory">Upload Certificate<font color='#FF0000'>*</font></string>
+    <string name="certificate_garden">Certificate</string>
+    <string name="selectCertificateType">Select Certificate Type</string>
+    <string name="srConfirmationMessage">Are you sure?</string>
+    <string name="srAdd">Add</string>
+    <string name="farmer_profile">Farmer Profile</string>
+    <string name="farmer_added">Farmer Added</string>
+    <string name="farm_added">Farm Added</string>
+    <string name="farm_updated">Farm Updated</string>
+    <string name="owned_land">Owned Land</string>
+    <string name="enter_farmer_mobile_phone">Enter farmer mobile phone</string>
+    <string name="coordinate_location">Location</string>
+    <string name="bank__account_name_mandatory">Bank Account Name<font color='#FF0000'>*</font></string>
+    <string name="bank_account_number_mandatory">Bank Account Number<font color='#FF0000'>*</font></string>
+
+    <string name="religion_mandatory">Religion<font color='#FF0000'>*</font></string>
+    <string name="education_mandatory">Education<font color='#FF0000'>*</font></string>
+    <string name="profession_mandatory">Profession<font color='#FF0000'>*</font></string>
+    <string name="field_of_work_mandatory">Field Of Work<font color='#FF0000'>*</font></string>
+    <string name="work_experience_mandatory">Work Experience<font color='#FF0000'>*</font></string>
+    <string name="marital_mandatory">Marital Status<font color='#FF0000'>*</font></string>
+    <string name="online_work_mandatory">Online Work<font color='#FF0000'>*</font></string>
+    <string name="income">Income</string>
+    <string name="income_mandatory">Income<font color='#FF0000'>*</font></string>
+    <string name="total_aset">Total Aset</string>
+    <string name="total_aset_mandatory">Total Aset<font color='#FF0000'>*</font></string>
+    <string name="home_ownership_mandatory">Home Ownership<font color='#FF0000'>*</font></string>
+    <string name="gender_mandatory">Gender<font color='#FF0000'>*</font></string>
+
+    <string name="email">Email</string>
+    <string name="email_mandatory">Email<font color='#FF0000'>*</font></string>
+    <string name="id_card">Id Card</string>
+    <string name="id_card_mandatory">Id Card<font color='#FF0000'>*</font></string>
+    <string name="id_card_photo_mandatory">Photo Of ID  Card<font color='#FF0000'>*</font></string>
+    <string name="kk_photo_mandatory">Photo Of Family Card<font color='#FF0000'>*</font></string>
+    <string name="npwp">NPWP</string>
+    <string name="npwp_mandatory">NPWP<font color='#FF0000'>*</font></string>
+    <string name="kk">No. KK</string>
+    <string name="kk_mandatory">No. KK<font color='#FF0000'>*</font></string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="birthplace">Birth Place</string>
+    <string name="birthplace_mandatory">Birth Place<font color='#FF0000'>*</font></string>
+    <string name="birthdate_mandatory">Birth Date<font color='#FF0000'>*</font></string>
+    <string name="sudah_nikah">Married</string>
+    <string name="belum_nikah">Single</string>
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="home_owner">Home Owner</string>
+    <string name="home_not_owner">Not Owner</string>
+    <string name="farmer_address">Farmer Address</string>
+    <string name="farmer_domicile">Farmer Domicile</string>
+    <string name="sesuai_ktp">Sesuai KTP</string>
+    <string name="srSelectEducation">Select Education</string>
+    <string name="srSelectProfesion">Select Profesion</string>
+    <string name="srSelectFieldOfWrok">Select Field Of Work</string>
+    <string name="srSelectWorkEcperience">Select Work Experience</string>
+    <string name="complete_profile">Please complete your Profile</string>
+    <string name="bpjs_tenagakerja">BPJS Ketenagakerjaan</string>
+    <string name="bpjs_tenagakerja_photo">Photo Of BPJS Ketenagakerjaan</string>
+    <string name="bpjs_kesehatan">BPJS Kesehatan</string>
+    <string name="bpjs_kesehatan_photo">Photo Of BPJS Kesehatan</string>
+
+</resources>

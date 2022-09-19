@@ -1,0 +1,270 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.gms.google-services'
+// Apply the Crashlytics Gradle plugin
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'com.novoda.bintray-release' // must be applied after your artifact generating plugin (eg. java / com.android.library)
+
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.javaindoku.yotaniniaga"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "KEY_AES", "\"AmosKeyAES123543\""
+        buildConfigField "String", "RANDOM_INIT_VECTOR", "\"RandomInitVector\""
+
+        def secureProps = new Properties()
+        if (file("../secure.properties").exists()) {
+            file("../secure.properties")?.withInputStream { secureProps.load(it) }
+        }
+        resValue "string", "maps_api_key", (secureProps.getProperty("MAPS_API_KEY") ?: "")
+    }
+
+    buildTypes {
+        def BASE_URL = "BASE_URL"
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", BASE_URL, "\"http://35.247.129.215:184/api/\""
+        }
+        debug{
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//            buildConfigField "String", BASE_URL, "\"http://35.247.129.215:184/api/\""
+            buildConfigField "String", BASE_URL, "\"http://35.247.129.215:84/api/\""
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+
+    androidExtensions {
+        experimental = true
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    testOptions {
+        unitTests.all {
+            // All the usual Gradle options.
+            jvmArgs '-XX:MaxPermSize=256m'
+            unitTests.returnDefaultValues = true
+
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+
+    publish {
+        userOrg = 'novoda'
+        groupId = 'com.novoda'
+        artifactId = 'bintray-release'
+        publishVersion = '0.6.1'
+        desc = 'Oh hi, this is a nice description for a project, right?'
+        website = 'https://github.com/novoda/bintray-release'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "androidx.appcompat:appcompat:$appcompat_version"
+    implementation "androidx.core:core-ktx:$core_version"
+    implementation "androidx.activity:activity-ktx:$activity_ktx_version"
+    implementation "androidx.constraintlayout:constraintlayout:$constraint_version"
+    implementation "androidx.legacy:legacy-support-v4:$legacy_support_version"
+
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$logging_interceptor_version"
+
+    // Dagger
+    implementation "com.google.dagger:dagger:$dagger_version"
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.libraries.places:places:2.4.0'
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
+    implementation "com.google.dagger:dagger-android:$dagger_version"
+    implementation "com.google.dagger:dagger-android-support:$dagger_version"
+    kapt "com.google.dagger:dagger-android-processor:$dagger_version"
+
+    // Dagger Assisted Inject
+    implementation "com.squareup.inject:assisted-inject-annotations-dagger2:$dagger_assisted_version"
+    kapt "com.squareup.inject:assisted-inject-processor-dagger2:$dagger_assisted_version"
+
+    // Glide
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    kapt "com.github.bumptech.glide:compiler:$glide_version"
+
+    // Lifecycle
+    implementation "android.arch.lifecycle:extensions:$lifecycle_extensions_version"
+
+    // Circle Image View
+    implementation "de.hdodenhof:circleimageview:$circle_image_view_version"
+
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-reactivestreams-ktx:$lifecycle_version"
+    testImplementation "androidx.arch.core:core-testing:$arch_version"
+
+    // Coroutine
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutine_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutine_version"
+
+    // Material Design
+    implementation "com.google.android.material:material:$material_design_version"
+
+    //shimmer
+    implementation "com.facebook.shimmer:shimmer:$shimmer_version"
+
+    //paging
+    implementation "androidx.paging:paging-runtime:$paging_version"
+
+    // Dependencies for local unit tests
+    testImplementation "junit:junit:$junit_version"
+    testImplementation "androidx.test.ext:junit:$ext_junit_version"
+    androidTestImplementation "androidx.test.ext:junit:$ext_junit_version"
+    androidTestImplementation "androidx.test.ext:junit-ktx:$ext_junit_version"
+    testImplementation "org.hamcrest:hamcrest-all:$hamcrest_version"
+    testImplementation "org.mockito:mockito-core:$mockito_core_version"
+    testImplementation "androidx.arch.core:core-testing:$core_testing_version"
+
+    // Dependencies for Android unit tests
+    androidTestImplementation "junit:junit:$junit_version"
+    androidTestImplementation "org.mockito:mockito-core:$mockito_core_version"
+    testImplementation "org.mockito:mockito-inline:$mockito_core_version"
+    testImplementation "com.squareup.okhttp3:mockwebserver:$okhttp_version"
+    testImplementation "com.squareup.okhttp3:okhttp:$okhttp_version"
+
+    // Android Testing Support Library's runner and rules
+    androidTestImplementation "androidx.test.ext:junit:$est_junit_version"
+    androidTestImplementation "androidx.test:core:$test_core_rule_version"
+    androidTestImplementation "androidx.test:rules:$test_core_rule_version"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
+    androidTestImplementation "androidx.test.espresso:espresso-contrib:$espresso_version"
+    androidTestImplementation "androidx.arch.core:core-testing:$core_testing_version"
+
+    testImplementation "org.json:json:$json_version"
+
+    // Dependencies for Idle Resource
+    implementation "androidx.test.espresso:espresso-idling-resource:$espresso_version"
+
+    //firebase
+    implementation "com.google.firebase:firebase-analytics:$firebase_analytics_service"
+
+    // Recommended: Add the Firebase SDK for Google Analytics.
+    implementation 'com.google.firebase:firebase-analytics-ktx:17.4.4'
+    implementation "com.google.firebase:firebase-messaging:$firebase_messaging_service"
+
+    // Add the Firebase Crashlytics SDK.
+    implementation 'com.google.firebase:firebase-crashlytics:17.1.1'
+
+    //otp
+    implementation "com.github.mukeshsolanki:android-otpview-pinview:$otp"
+
+    //Tooltips
+    implementation 'com.github.douglasjunior:android-simple-tooltip:0.2.2'
+    implementation "com.github.skydoves:balloon:1.1.0"
+    implementation 'com.github.sephiroth74:android-target-tooltip:release-2.0.5'
+
+    // Room
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-rxjava2:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+
+    // SQL Chipper
+    implementation "net.zetetic:android-database-sqlcipher:$sql_cipher"
+
+    //sdp
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    //localehelper
+    implementation 'com.zeugmasolutions.localehelper:locale-helper-android:1.0.3'
+
+//    tabbar meow
+    implementation 'com.etebarian:meow-bottom-navigation:1.0.4'
+
+    //navigation fragment
+    implementation "androidx.navigation:navigation-fragment:$navigation_fragment"
+    implementation "androidx.navigation:navigation-ui:$navigation_fragment"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigation_fragment"
+
+    implementation 'com.google.android.material:material:1.2.0'
+
+    //playservice authentication
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+
+    //calendarview
+    implementation 'com.github.kizitonwose:CalendarView:0.3.5'
+    implementation 'com.jakewharton.threetenabp:threetenabp:1.2.4'
+
+    //slideup
+    implementation "com.github.mancj:SlideUp-Android:2.2.8"
+
+    implementation 'com.github.jrvansuita:PickImage:2.2.4'
+
+    //chart
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    //searchable spinner
+    implementation 'com.github.miteshpithadiya:SearchableSpinner:1e4a615cdf'
+
+    //Compress
+    implementation 'com.iceteck.silicompressorr:silicompressor:2.2.3'
+
+    //permission util
+    implementation 'ru.superjob:kotlin-permissions:1.0.3'
+
+    implementation('com.journeyapps:zxing-android-embedded:4.1.0') { transitive = false }
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.google.zxing:core:3.3.0'
+
+    //paris airbnb
+    implementation 'com.airbnb.android:paris:1.4.0'
+    // If you're using Paris annotations.
+    kapt 'com.airbnb.android:paris-processor:1.4.0'
+
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation("com.squareup.moshi:moshi-kotlin:1.11.0")
+    kapt("com.squareup.moshi:moshi-kotlin-codegen:1.11.0")
+
+    implementation('com.journeyapps:zxing-android-embedded:4.1.0') { transitive = false }
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.google.zxing:core:3.3.0'
+
+    implementation "com.google.android.gms:play-services-maps:$googlePlayVersion"
+    implementation "com.google.android.gms:play-services-location:$googlePlayVersion"
+
+}

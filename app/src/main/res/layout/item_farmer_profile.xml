@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/farmerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/_18sdp">
+
+            <LinearLayout
+                android:id="@+id/labelLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lblName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:textColor="@color/color_title_home"
+                    android:textStyle="bold"
+                    tools:text="Mr Fulan" />
+
+                <TextView
+                    android:id="@+id/lblPhoneNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorSubtitle"
+                    tools:text="083876156530" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/editButton"
+                android:layout_width="30dp"
+                android:layout_height="0dp"
+                android:layout_alignTop="@id/deleteButton"
+                android:layout_alignBottom="@id/deleteButton"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@id/deleteButton"
+                android:background="@drawable/shape_round_pink"
+                android:padding="6dp"
+                android:src="@drawable/ic_edit_profile" />
+
+            <ImageView
+                android:id="@+id/deleteButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignTop="@id/labelLayout"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="10dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/shape_round_pink"
+                android:padding="6dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/delete_anticon_copy_2" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+</layout>

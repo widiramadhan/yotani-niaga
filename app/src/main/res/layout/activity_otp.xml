@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".view.otp.OtpActivity">
+
+        <include
+            android:id="@+id/appbarLayout"
+            layout="@layout/toolbar_home"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/marginWidgetToParent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:text="@string/verification_code_has_sent_to"
+                    android:textSize="@dimen/_11sdp"
+                    />
+
+                <TextView
+                    android:id="@+id/lblPhoneNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/nunito_sans_regular"
+                    android:text="@string/number"
+                    android:textAlignment="gravity"
+                    android:textSize="@dimen/_14sdp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp">
+
+                    <LinearLayout
+                        android:id="@+id/lytTimer"
+                        android:layout_width="209dp"
+                        android:layout_height="209dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shape_circle"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:rotation="-90"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/lblCountDown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="00:59"
+                        android:textSize="42dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/lblInputVerificationCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="43dp"
+                    android:textSize="@dimen/_11sdp"
+                    android:fontFamily="@font/nunito_sans_regular"
+                    android:text="@string/srInputVerificationCode"
+                    />
+
+                <com.mukesh.OtpView
+                    android:id="@+id/otpView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:digits="0123456789"
+                    android:fontFamily="@font/nunito_sans_regular"
+                    android:gravity="center_horizontal"
+                    android:inputType="numberPassword"
+                    android:itemBackground="@drawable/bg_shape_edittext"
+                    app:hideLineWhenFilled="true"
+                    app:itemCount="4"
+                    app:itemHeight="@dimen/_38sdp"
+                    app:itemSpacing="@dimen/_10sdp"
+                    app:itemWidth="@dimen/_56sdp"
+                    app:lineColor="#00000000"
+                    app:state_filled="true"
+                    app:viewType="line" />
+
+                <Button
+                    android:id="@+id/btnVerification"
+                    style="@style/ButtonYoTani"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="72dp"
+                    android:text="@string/verification"
+                    android:textSize="@dimen/font_button" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:paddingTop="23dp"
+                        android:text="@string/not_receive_code_verification"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/btnGetNewToken"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/candara_bold"
+                        android:paddingTop="23dp"
+                        android:text="@string/get_new_token"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/_10sdp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_13sdp"
+        >
+
+        <ImageView
+            android:id="@+id/imgTransactionFarmer"
+            android:layout_width="@dimen/_61sdp"
+            android:layout_height="@dimen/_69sdp"
+            android:src="@drawable/ic_docs"
+            android:layout_marginTop="@dimen/_13sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="17dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgTransactionFarmer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgTransactionFarmer"
+            app:layout_constraintTop_toTopOf="@+id/imgTransactionFarmer">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quota"
+                    android:textColor="@color/colorSubtitle"
+                    android:textSize="@dimen/_13sdp"
+                    />
+
+                <TextView
+                    android:id="@+id/lblQuota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="500 ton"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorSubtitle"
+                    android:textSize="@dimen/_13sdp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lblPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Rp 1.819,23"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quota_fill"
+                    android:textColor="@color/lblInput"
+                    android:textSize="@dimen/_13sdp"
+                    />
+
+                <TextView
+                    android:id="@+id/lblQuotaFill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="500 ton"
+                    android:textStyle="bold"
+                    android:textColor="@color/lblInput"
+                    android:textSize="@dimen/_13sdp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lblCompanyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lblInput"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="@+id/imgTransactionFarmer"
+            app:layout_constraintTop_toBottomOf="@+id/imgTransactionFarmer"
+            tools:text="PT Indocyber Global Teknologi" />
+
+        <Button
+            android:id="@+id/btnSendTbs"
+            style="@style/ButtonYoTani"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/_15sdp"
+            android:text="@string/send_tbs"
+            app:layout_constraintBottom_toBottomOf="@+id/lblCompanyName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/lblCompanyName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

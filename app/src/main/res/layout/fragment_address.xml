@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        android:paddingHorizontal="@dimen/_20sdp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:text="@string/profileAlamat"
+                android:textColor="#7d7d7d"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edtKTPAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/shape_text_input"
+                android:digits="@string/srValidationAlphanumeric"
+                android:maxLength="200"
+                android:hint="@string/description"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:textColor="#4d4d4d"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/lblErrorKtpAlamat"
+                style="@style/ErrorTextInput"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/srPleaseFillAddress"
+                android:textColor="@color/colorTextInputError"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="17dp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/profileRT"
+                        android:textColor="#7d7d7d"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:id="@+id/edtKTPRT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/shape_text_input"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:textColor="#4d4d4d"
+                        android:digits="0123456789"
+                        android:maxLength="3"
+                        android:inputType="numberSigned"
+                        android:focusableInTouchMode="true"
+                        android:focusable="true"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/lblErrorKtpRt"
+                        style="@style/ErrorTextInput"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/srPleaseFillRt"
+                        android:textColor="@color/colorTextInputError"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="17dp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/profileRW"
+                        android:textColor="#7d7d7d"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:id="@+id/edtKTPRW"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/shape_text_input"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:textColor="#4d4d4d"
+                        android:digits="0123456789"
+                        android:maxLength="3"
+                        android:inputType="numberSigned"
+                        android:focusableInTouchMode="true"
+                        android:focusable="true"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/lblErrorKtpRw"
+                        style="@style/ErrorTextInput"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/srPleaseFillRw"
+                        android:textColor="@color/colorTextInputError"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:text="@string/profileProvinsi"
+                android:textColor="#7d7d7d"
+                android:textSize="14dp" />
+
+            <!-- Spinner Provinsi Text -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_text_input"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                >
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/spinnerProvinsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/SpinnerTheme"
+                    android:fontFamily="@font/nunito_sans_regular"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorChevron"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lblErrorKtpProvinsi"
+                style="@style/ErrorTextInput"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/srPleaseSelectProvince"
+                android:textColor="@color/colorTextInputError"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:text="@string/profileKabupaten"
+                android:textColor="#7d7d7d"
+                android:textSize="14dp" />
+
+            <!-- Spinner Kabupaten Text -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_text_input"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                >
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/spinnerKabupaten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/SpinnerTheme"
+                    android:fontFamily="@font/nunito_sans_regular"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorChevron"
+                    />
+            </LinearLayout>
+
+            <!-- Spinner Kecamatan Text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:text="@string/profileKecamatan"
+                android:textColor="#7d7d7d"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_text_input"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                >
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/spinnerKecamatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/SpinnerTheme"
+                    android:fontFamily="@font/nunito_sans_regular"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorChevron"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:text="@string/profileKelurahan"
+                android:textColor="#7d7d7d"
+                android:textSize="14dp" />
+
+            <!-- Spinner Kelurahan Text -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_text_input"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                >
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/spinnerKelurahan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/SpinnerTheme"
+                    android:fontFamily="@font/nunito_sans_regular"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorChevron"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:text="@string/profileKodePos"
+                android:textColor="#7d7d7d"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edtKTPKodePos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/shape_text_input"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:textColor="#4d4d4d"
+                android:editable="false"
+                android:longClickable="false"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnConfirmationNegative"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_cancel"
+                    android:fontFamily="@font/candara_bold"
+                    android:text="@string/btn_back"
+                    android:textAllCaps="false"
+                    android:textColor="#f26327"
+                    android:textSize="@dimen/_14sdp" />
+
+                <Button
+                    android:id="@+id/btnConfirmationPositive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_daftar"
+                    android:fontFamily="@font/candara_bold"
+                    android:text="@string/btn_next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</layout>

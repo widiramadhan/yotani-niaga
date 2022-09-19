@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "239129835249",
+    "firebase_url": "https://yotani-niaga.firebaseio.com",
+    "project_id": "yotani-niaga",
+    "storage_bucket": "yotani-niaga.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239129835249:android:ca02902aee55a0814edb50",
+        "android_client_info": {
+          "package_name": "com.javaindoku.yotaniniaga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "239129835249-t7cf4vf9i1rvgc3j99ma8sjn0f8o0fmh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAc4UQupIuxWIZu1PO7is-HH2aNRsTaisM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "239129835249-t7cf4vf9i1rvgc3j99ma8sjn0f8o0fmh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

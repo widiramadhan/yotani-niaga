@@ -1,0 +1,52 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="design_fab_image_size" tools:override="true">30dp</dimen>
+
+    <dimen name="spacer_large">20dp</dimen>
+    <dimen name="spacer_small">5dp</dimen>
+    <dimen name="halfPageMargin">16dp</dimen><!-- half of distance between pages -->
+    <dimen name="peekOffset">50dp</dimen><!-- how much of adjacent pages is shown -->
+    <dimen name="back_width">26dp</dimen>
+    <dimen name="back_height">20dp</dimen>
+    <dimen name="back_margin_left">20dp</dimen>
+    <dimen name="back_margin_top">22dp</dimen>
+    <dimen name="marginWidgetToParent">25dp</dimen><!-- how much of adjacent pages is shown -->
+    <dimen name="padding_drawable_icon">21dp</dimen>
+    <dimen name="padding_bottom_edittext">15dp</dimen>
+    <dimen name="padding_page">20dp</dimen>
+
+    <dimen name="alertDialogWidth">312dp</dimen>
+    <dimen name="alertDialogHeight">315.5dp</dimen>
+    <dimen name="font_button">18dp</dimen>
+    <dimen name="font_bold">18dp</dimen>
+    <dimen name="appbar_padding">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="font_title_faq">14dp</dimen>
+
+    <dimen name="font_sub_title">13dp</dimen>
+    <dimen name="margin_bottom_title_faq">5dp</dimen>
+    <dimen name="margin_top_title_faq">15dp</dimen>
+    <dimen name="font_button2">16dp</dimen>
+    <dimen name="margin_meow_bottom">56dp</dimen>
+
+    <dimen name="padding_notif">5dp</dimen>
+    <dimen name="marginTopForLayout">56dp</dimen>
+
+    <dimen name="dimen1dp">1dp</dimen>
+    <dimen name="textSize12dp">12dp</dimen>
+
+    <dimen name="marginBottomRegister">100dp</dimen>
+    <dimen name="dimenWidthLogi">169dp</dimen>
+    <dimen name="dimenHeightLogo">90</dimen>
+
+    <dimen name="radius_header_home">30dp</dimen>
+
+</resources>

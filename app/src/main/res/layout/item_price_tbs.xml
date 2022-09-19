@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_16sdp"
+        android:paddingHorizontal="@dimen/_10sdp"
+        >
+
+            <TextView
+                android:id="@+id/lblYears"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:text="3 Tahun"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/color_title_home"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/lblPrice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:text="Rp 1.375,23"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:layout_weight="1"
+                />
+
+    </LinearLayout>
+</layout>

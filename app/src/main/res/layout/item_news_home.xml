@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/_16sdp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_weight="8"
+            android:gravity="center"
+            app:cardCornerRadius="8dp">
+
+            <ImageView
+                android:id="@+id/imgPhotos"
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:scaleType="centerCrop"
+                tools:src="@color/colorLoading" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/lblTitleNews"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:textColor="#4D4D4D"
+            android:textStyle="bold"
+            tools:text="Sektor Perkebunan Kelapa Sawit Mesti Dijaga" />
+
+        <TextView
+            android:id="@+id/lblDateNews"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textColor="#808080"
+            android:textSize="@dimen/_10sdp"
+            tools:text="Kamis, 14 Desember 2020 | 12:05 WIB" />
+
+    </LinearLayout>
+</layout>

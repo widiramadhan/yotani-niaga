@@ -1,0 +1,1324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.javaindoku.yotaniniaga.viewmodel.EditProfilePetaniViewModel" />
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray3"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:cardCornerRadius="@dimen/_6sdp"
+                app:cardElevation="@dimen/_2sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_16sdp"
+                    android:layout_marginVertical="@dimen/_16sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/photo_profile"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imgProfile"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_businessman" />
+
+                        <Button
+                            android:id="@+id/btnImage"
+                            style="@style/ButtonConfirmationNegative"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_24sdp"
+                            android:text="Pilih" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/lblErrorImgProfile"
+                        style="@style/ErrorTextInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/field_is_required"
+                        android:textColor="@color/colorTextInputError"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/profileNamaMandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtFarmerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/shape_text_input"
+                        android:gravity="center_vertical"
+                        android:hint="@string/profileNama"
+                        android:inputType="text" />
+
+                    <TextView
+                        android:id="@+id/lblErrorFarmerName"
+                        style="@style/ErrorTextInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/field_is_required"
+                        android:textColor="@color/colorTextInputError"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/profilePhoneNumber"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtPhoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/shape_disabled_edittext"
+                        android:editable="false"
+                        android:gravity="center_vertical"
+                        android:hint="No Telepon" />
+
+                    <TextView
+                        android:id="@+id/lblErrorPhoneNumber"
+                        style="@style/ErrorTextInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/field_is_required"
+                        android:textColor="@color/colorTextInputError"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/email_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/shape_text_input"
+                        android:gravity="center_vertical"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress" />
+
+                    <TextView
+                        android:id="@+id/lblErrorEmail"
+                        style="@style/ErrorTextInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/field_is_required"
+                        android:textColor="@color/colorTextInputError"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:text="@string/id_card_photo_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgKTP"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_weight="1"
+                            android:src="@drawable/bg_rectangle_white_black" />
+
+                        <Button
+                            android:id="@+id/btnUnggahKTP"
+                            style="@style/ButtonConfirmationNegative"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_24sdp"
+                            android:text="Pilih" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/lblErrorImgKTP"
+                        style="@style/ErrorTextInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/field_is_required_idcard"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/id_card_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtIDCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/shape_text_input"
+                        android:gravity="center_vertical"
+                        android:hint="@string/id_card"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:id="@+id/lblErrorIdCard"
+                        style="@style/ErrorTextInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/field_is_required_idcard"
+                        android:textColor="@color/colorTextInputError"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:text="@string/kk_photo_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgKK"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_weight="1"
+                            android:src="@drawable/bg_rectangle_white_black" />
+
+                        <Button
+                            android:id="@+id/btnUnggahKK"
+                            style="@style/ButtonConfirmationNegative"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_24sdp"
+                            android:text="Pilih"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/lblErrorImgKK"
+                        style="@style/ErrorTextInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/field_is_required"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/kk_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtKK"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/shape_text_input"
+                        android:gravity="center_vertical"
+                        android:hint="@string/kk"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:id="@+id/lblErrorKK"
+                        style="@style/ErrorTextInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/field_is_required_npwp"
+                        android:textColor="@color/colorTextInputError"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/npwp_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtNPWP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/shape_text_input"
+                        android:gravity="center_vertical"
+                        android:hint="@string/npwp"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:id="@+id/lblErrorNPWP"
+                        style="@style/ErrorTextInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/field_is_required_npwp"
+                        android:textColor="@color/colorTextInputError"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                app:cardCornerRadius="@dimen/_6sdp"
+                app:cardElevation="@dimen/_2sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_16sdp"
+                    android:layout_marginVertical="@dimen/_16sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/birthplace_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtBirthPlace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/shape_text_input"
+                        android:gravity="center_vertical"
+                        android:hint="@string/birthplace"
+                        android:inputType="text" />
+
+                    <TextView
+                        android:id="@+id/lblErrorBirthPlace"
+                        style="@style/ErrorTextInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/field_is_required"
+                        android:textColor="@color/colorTextInputError"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/birthdate_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/edtBirthDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/shape_text_input">
+
+                        <TextView
+                            android:id="@+id/lblBirthDate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8"
+                            android:hint="@string/dd_mm_yyyy"
+                            android:textColor="@color/color_title_home" />
+
+                        <ImageView
+                            android:id="@+id/imgBirthDate"
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/ic_calendar_reschedule" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/lblErrorBirthDate"
+                        style="@style/ErrorTextInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/field_is_required"
+                        android:textColor="@color/colorTextInputError"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/gender_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp">
+
+                        <LinearLayout
+                            android:id="@+id/lytCheckMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_check_worker_agent_active"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imgCheckMale"
+                                android:layout_width="19dp"
+                                android:layout_height="19dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_radio_active" />
+
+                            <TextView
+                                android:id="@+id/lblCheckMale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:fontFamily="@font/nunito_sans_semi_bold"
+                                android:text="@string/male"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/_12sdp" />
+
+                        </LinearLayout>
+
+                        <androidx.legacy.widget.Space
+                            android:layout_width="@dimen/_8sdp"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:id="@+id/lytCheckFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_check_worker_agent_pasif"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imgCheckFemale"
+                                android:layout_width="19dp"
+                                android:layout_height="19dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_radio_pasive2" />
+
+                            <TextView
+                                android:id="@+id/lblCheckFemale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:fontFamily="@font/nunito_sans_semi_bold"
+                                android:text="@string/female"
+                                android:textColor="@color/ligh_gray2"
+                                android:textSize="@dimen/_12sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/religion_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <!-- Spinner Agama Text -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/shape_text_input"
+                        android:gravity="center_vertical"
+                        android:padding="0dp">
+
+                        <EditText
+                            android:id="@+id/textAnchorReligion"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/spinnerReligion"
+                            style="@style/SpinnerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_alignTop="@id/textAnchorReligion"
+                            android:layout_alignBottom="@id/textAnchorReligion"
+                            android:fontFamily="@font/nunito_sans_regular"
+                            android:textColor="@color/colorChevron"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/marital_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp">
+
+                        <LinearLayout
+                            android:id="@+id/lytCheckSudahNikah"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_check_worker_agent_active"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imgCheckSudahNikah"
+                                android:layout_width="19dp"
+                                android:layout_height="19dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_radio_active" />
+
+                            <TextView
+                                android:id="@+id/lblCheckSudahNikah"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:fontFamily="@font/nunito_sans_semi_bold"
+                                android:text="@string/sudah_nikah"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/_12sdp" />
+
+                        </LinearLayout>
+
+                        <androidx.legacy.widget.Space
+                            android:layout_width="@dimen/_8sdp"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:id="@+id/lytCheckBelumNikah"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_check_worker_agent_pasif"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imgCheckBelumNikah"
+                                android:layout_width="19dp"
+                                android:layout_height="19dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_radio_pasive2" />
+
+                            <TextView
+                                android:id="@+id/lblCheckBelumNikah"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:fontFamily="@font/nunito_sans_semi_bold"
+                                android:text="@string/belum_nikah"
+                                android:textColor="@color/ligh_gray2"
+                                android:textSize="@dimen/_12sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                app:cardCornerRadius="@dimen/_6sdp"
+                app:cardElevation="@dimen/_2sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_16sdp"
+                    android:layout_marginVertical="@dimen/_16sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/education_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <!-- Spinner Pendidikan Text -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/shape_text_input"
+                        android:gravity="center_vertical"
+                        android:padding="0dp">
+
+                        <EditText
+                            android:id="@+id/textAnchorEducation"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/spinnerEducation"
+                            style="@style/SpinnerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_alignTop="@id/textAnchorEducation"
+                            android:layout_alignBottom="@id/textAnchorEducation"
+                            android:fontFamily="@font/nunito_sans_regular"
+                            android:textColor="@color/colorChevron"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/profession_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <!-- Spinner Profesi Text -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/shape_text_input"
+                        android:gravity="center_vertical"
+                        android:padding="0dp">
+
+                        <EditText
+                            android:id="@+id/textAnchorProfession"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/spinnerProfession"
+                            style="@style/SpinnerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_alignTop="@id/textAnchorProfession"
+                            android:layout_alignBottom="@id/textAnchorProfession"
+                            android:fontFamily="@font/nunito_sans_regular"
+                            android:textColor="@color/colorChevron"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/field_of_work_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <!-- Spinner Pendidikan Text -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/shape_text_input"
+                        android:gravity="center_vertical"
+                        android:padding="0dp">
+
+                        <EditText
+                            android:id="@+id/textAnchorFieldWork"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/spinnerFieldWork"
+                            style="@style/SpinnerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_alignTop="@id/textAnchorFieldWork"
+                            android:layout_alignBottom="@id/textAnchorFieldWork"
+                            android:fontFamily="@font/nunito_sans_regular"
+                            android:textColor="@color/colorChevron"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/work_experience_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <!-- Spinner Pengalaman Kerja Text -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/shape_text_input"
+                        android:gravity="center_vertical"
+                        android:padding="0dp">
+
+                        <EditText
+                            android:id="@+id/textAnchorWorkExperience"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/spinnerWorkExperience"
+                            style="@style/SpinnerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_alignTop="@id/textAnchorWorkExperience"
+                            android:layout_alignBottom="@id/textAnchorWorkExperience"
+                            android:fontFamily="@font/nunito_sans_regular"
+                            android:textColor="@color/colorChevron"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/online_work_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp">
+
+                        <LinearLayout
+                            android:id="@+id/lytCheckOnline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_check_worker_agent_active"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imgCheckOnline"
+                                android:layout_width="19dp"
+                                android:layout_height="19dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_radio_active" />
+
+                            <TextView
+                                android:id="@+id/lblCheckOnline"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:fontFamily="@font/nunito_sans_semi_bold"
+                                android:text="@string/online"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/_12sdp" />
+
+                        </LinearLayout>
+
+                        <androidx.legacy.widget.Space
+                            android:layout_width="@dimen/_8sdp"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:id="@+id/lytCheckOffline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_check_worker_agent_pasif"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imgCheckOffline"
+                                android:layout_width="19dp"
+                                android:layout_height="19dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_radio_pasive2" />
+
+                            <TextView
+                                android:id="@+id/lblCheckOffline"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:fontFamily="@font/nunito_sans_semi_bold"
+                                android:text="@string/offline"
+                                android:textColor="@color/ligh_gray2"
+                                android:textSize="@dimen/_12sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/home_ownership_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp">
+
+                        <LinearLayout
+                            android:id="@+id/lytCheckRumahSendiri"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_check_worker_agent_active"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imgCheckRumahSendiri"
+                                android:layout_width="19dp"
+                                android:layout_height="19dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_radio_active" />
+
+                            <TextView
+                                android:id="@+id/lblCheckRumahSendiri"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:fontFamily="@font/nunito_sans_semi_bold"
+                                android:text="@string/home_owner"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/_12sdp" />
+
+                        </LinearLayout>
+
+                        <androidx.legacy.widget.Space
+                            android:layout_width="@dimen/_8sdp"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:id="@+id/lytCheckRumahTidakSendiri"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_check_worker_agent_pasif"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imgCheckRumahTidakSendiri"
+                                android:layout_width="19dp"
+                                android:layout_height="19dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_radio_pasive2" />
+
+                            <TextView
+                                android:id="@+id/lblCheckRUmahTidakSendiri"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:fontFamily="@font/nunito_sans_semi_bold"
+                                android:text="@string/home_not_owner"
+                                android:textColor="@color/ligh_gray2"
+                                android:textSize="@dimen/_12sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/income_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtIncome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/shape_text_input"
+                        android:gravity="center_vertical"
+                        android:hint="@string/income"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:id="@+id/lblErrorIncome"
+                        style="@style/ErrorTextInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/field_is_required"
+                        android:textColor="@color/colorTextInputError"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/total_aset_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtTotalAset"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/shape_text_input"
+                        android:gravity="center_vertical"
+                        android:hint="@string/total_aset"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:id="@+id/lblErrorTotalAset"
+                        style="@style/ErrorTextInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/field_is_required"
+                        android:textColor="@color/colorTextInputError"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                app:cardCornerRadius="@dimen/_6sdp"
+                app:cardElevation="@dimen/_2sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_16sdp"
+                    android:layout_marginVertical="@dimen/_16sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/bank_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <!-- Spinner Bank Text -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/shape_text_input"
+                        android:gravity="center_vertical"
+                        android:padding="0dp">
+
+                        <EditText
+                            android:id="@+id/textAnchor"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/spinnerBank"
+                            style="@style/SpinnerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_alignTop="@id/textAnchor"
+                            android:layout_alignBottom="@id/textAnchor"
+                            android:fontFamily="@font/nunito_sans_regular"
+                            android:textColor="@color/colorChevron"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/bank__account_name_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtNameOfBank"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/shape_text_input"
+                        android:gravity="center_vertical"
+                        android:hint="@string/bank__account_name"
+                        android:inputType="text" />
+
+                    <TextView
+                        android:id="@+id/lblErrorNameOfBank"
+                        style="@style/ErrorTextInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/field_is_required"
+                        android:textColor="@color/colorTextInputError"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/bank_account_number_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtNoOfBank"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/shape_text_input"
+                        android:gravity="center_vertical"
+                        android:hint="No Rekening"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:id="@+id/lblErrorNoBank"
+                        style="@style/ErrorTextInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/field_is_required"
+                        android:textColor="@color/colorTextInputError"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                app:cardCornerRadius="@dimen/_6sdp"
+                app:cardElevation="@dimen/_2sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_16sdp"
+                    android:layout_marginVertical="@dimen/_16sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/bpjs_tenagakerja"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtBPJSTK"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/shape_text_input"
+                        android:gravity="center_vertical"
+                        android:hint="@string/bpjs_tenagakerja"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:id="@+id/lblErrorBPJSTK"
+                        style="@style/ErrorTextInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/field_is_required_idcard"
+                        android:textColor="@color/colorTextInputError"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:text="@string/bpjs_tenagakerja_photo"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgBPJSTK"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_weight="1"
+                            android:src="@drawable/bg_rectangle_white_black" />
+
+                        <Button
+                            android:id="@+id/btnUnggahBPJSTK"
+                            style="@style/ButtonConfirmationNegative"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_24sdp"
+                            android:text="Pilih" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/lblErrorImgBPJSTK"
+                        style="@style/ErrorTextInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/field_is_required_idcard"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/bpjs_kesehatan"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtBPJSKes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/shape_text_input"
+                        android:gravity="center_vertical"
+                        android:hint="@string/bpjs_kesehatan"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:id="@+id/lblErrorBPJSKes"
+                        style="@style/ErrorTextInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/field_is_required_idcard"
+                        android:textColor="@color/colorTextInputError"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:text="@string/bpjs_kesehatan_photo"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgBPJSKes"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_weight="1"
+                            android:src="@drawable/bg_rectangle_white_black" />
+
+                        <Button
+                            android:id="@+id/btnUnggahBPJSKes"
+                            style="@style/ButtonConfirmationNegative"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_24sdp"
+                            android:text="Pilih" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/lblErrorImgBPJSKes"
+                        style="@style/ErrorTextInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/field_is_required_idcard"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnConfirmationNegative"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_cancel"
+                    android:fontFamily="@font/candara_bold"
+                    android:text="@string/btn_back"
+                    android:textAllCaps="false"
+                    android:textColor="#f26327"
+                    android:textSize="@dimen/_14sdp" />
+
+                <Button
+                    android:id="@+id/btnConfirmationPositive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_daftar"
+                    android:fontFamily="@font/candara_bold"
+                    android:text="@string/btn_next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</layout>

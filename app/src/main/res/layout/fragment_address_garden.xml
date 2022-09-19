@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_20sdp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:text="@string/coordinate_mandatory"
+                android:textColor="@color/color_title_home"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    tools:context=".view.editprofilepetani.EditProfilePetaniActivity.EditProfilePetaniActivity" />
+
+                <ImageView
+                    android:id="@+id/mapMarker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_marker_maps"
+                    android:layout_centerInParent="true" />
+
+                <com.javaindoku.yotaniniaga.utilities.DelayAutoCompleteTextView
+                    android:id="@+id/edtxMapSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:paddingLeft="30dp"
+                    android:background="@drawable/shape_text_input"
+                    android:focusable="true"
+                    android:maxLines="1"
+                    android:inputType="textEmailSubject"
+                    android:selectAllOnFocus="true"
+                    android:fontFamily="@font/nunito_sans_regular"
+                    android:textColor="#4d4d4d"
+                    android:textSize="@dimen/_14sdp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/edtxMapSearch"
+                    android:layout_alignBottom="@id/edtxMapSearch"
+                    android:layout_alignLeft="@id/edtxMapSearch"
+                    android:src="@drawable/ic_search_black_24dp"
+                    android:layout_marginLeft="8dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:text="@string/profileAlamat"
+                android:textColor="@color/color_title_home"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/edtKTPAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@drawable/shape_text_input"
+                android:digits="@string/srValidationAlphanumeric"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:hint="@string/description"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:gravity="top|left"
+                android:maxLength="200"
+                android:textColor="#4d4d4d" />
+
+            <TextView
+                android:id="@+id/lblErrorKtpAlamat"
+                style="@style/ErrorTextInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/field_is_required"
+                android:textColor="@color/colorTextInputError"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/profileRT"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/edtKTPRT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/shape_text_input"
+                        android:digits="0123456789"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:inputType="numberSigned"
+                        android:maxLength="3"
+                        android:textColor="#4d4d4d"/>
+
+                    <TextView
+                        android:id="@+id/lblErrorKtpRt"
+                        style="@style/ErrorTextInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/field_is_required"
+                        android:textColor="@color/colorTextInputError"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <androidx.legacy.widget.Space
+                    android:layout_width="@dimen/_6sdp"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/profileRW"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/edtKTPRW"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/shape_text_input"
+                        android:digits="0123456789"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:inputType="numberSigned"
+                        android:maxLength="3"
+                        android:textColor="#4d4d4d" />
+
+                    <TextView
+                        android:id="@+id/lblErrorKtpRw"
+                        style="@style/ErrorTextInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/field_is_required"
+                        android:textColor="@color/colorTextInputError"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:text="@string/profileProvinsi"
+                android:textColor="@color/color_title_home"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"/>
+
+            <!-- Spinner Provinsi Text -->
+            <RelativeLayout
+                android:id="@+id/lytProvinsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@drawable/shape_text_input"
+                android:padding="0dp"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/textAnchor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/spinnerProvinsi"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_alignTop="@id/textAnchor"
+                    android:layout_alignBottom="@id/textAnchor"
+                    android:fontFamily="@font/nunito_sans_regular"
+                    android:textColor="@color/colorChevron"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/lblErrorKtpProvinsi"
+                style="@style/ErrorTextInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/field_is_required"
+                android:textColor="@color/colorTextInputError"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:text="@string/profileKabupaten"
+                android:textColor="@color/color_title_home"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"/>
+
+            <!-- Spinner Kabupaten Text -->
+            <RelativeLayout
+                android:id="@+id/lytkabupaten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@drawable/shape_text_input"
+                android:padding="0dp"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/textAnchor1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/spinnerKabupaten"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_alignTop="@id/textAnchor1"
+                    android:layout_alignBottom="@id/textAnchor1"
+                    android:fontFamily="@font/nunito_sans_regular"
+                    android:textColor="@color/colorChevron"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+
+            <!-- Spinner Kecamatan Text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:text="@string/profileKecamatan"
+                android:textColor="@color/color_title_home"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:id="@+id/lytKecamatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@drawable/shape_text_input"
+                android:padding="0dp"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/textAnchor2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/spinnerKecamatan"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_alignTop="@id/textAnchor2"
+                    android:layout_alignBottom="@id/textAnchor2"
+                    android:fontFamily="@font/nunito_sans_regular"
+                    android:textColor="@color/colorChevron"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:text="@string/profileKelurahan"
+                android:textColor="@color/color_title_home"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"/>
+
+            <!-- Spinner Kelurahan Text -->
+
+            <RelativeLayout
+                android:id="@+id/lytKelurahan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@drawable/shape_text_input"
+                android:padding="0dp"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/textAnchor3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/spinnerKelurahan"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_alignTop="@id/textAnchor3"
+                    android:layout_alignBottom="@id/textAnchor3"
+                    android:fontFamily="@font/nunito_sans_regular"
+                    android:textColor="@color/colorChevron"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:text="@string/profileKodePos"
+                android:textColor="@color/color_title_home"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/edtKTPKodePos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@drawable/shape_text_input"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:longClickable="false"
+                android:textColor="#4d4d4d"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/lblErrorKtpKodePos"
+                style="@style/ErrorTextInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/field_is_required"
+                android:textColor="@color/colorTextInputError"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnConfirmationNegative"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_cancel"
+                    android:fontFamily="@font/candara_bold"
+                    android:text="@string/btn_back"
+                    android:textAllCaps="false"
+                    android:textColor="#f26327"
+                    android:textSize="@dimen/_14sdp" />
+
+                <Button
+                    android:id="@+id/btnConfirmationPositive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_daftar"
+                    android:fontFamily="@font/candara_bold"
+                    android:text="@string/btn_next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</layout>

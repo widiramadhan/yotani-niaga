@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.news.NewsSearchActivity">
+
+        <ImageView
+            android:id="@+id/btnBackSearchFragment"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:visibility="visible"
+            android:layout_marginEnd="@dimen/_20sdp"
+            style="?android:selectableItemBackground"
+            android:src="@drawable/fill_1"
+            android:layout_margin="@dimen/_14sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:id="@+id/lblSearchNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_news"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:textColor="@color/color_title_home"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/btnBackSearchFragment"
+            app:layout_constraintStart_toEndOf="@+id/btnBackSearchFragment"
+            app:layout_constraintTop_toTopOf="@+id/btnBackSearchFragment" />
+
+        <TextView
+            android:id="@+id/lblNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/btnBackSearchFragment"
+            android:layout_marginTop="@dimen/_29sdp"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:textStyle="bold"
+            android:textColor="@color/color_title_home"
+            app:layout_constraintLeft_toLeftOf="@id/btnBackSearchFragment"
+            android:text="@string/news"/>
+
+        <EditText
+            android:id="@+id/edtSearchNews"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/search_title_keyword_of_the_news"
+            app:layout_constraintLeft_toLeftOf="@id/btnBackSearchFragment"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintTop_toBottomOf="@id/lblNews"
+            android:background="@drawable/shape_text_input"
+            />
+
+        <Button
+            android:id="@+id/btnOkSearchNews"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/btnBackSearchFragment"
+            app:layout_constraintRight_toRightOf="@id/edtSearchNews"
+            android:text="Cari"
+            android:layout_marginBottom="32dp"
+            style="@style/ButtonYoTani"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

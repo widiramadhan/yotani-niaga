@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_transaction_petani"
+    app:startDestination="@id/transactionFarmerFragment"
+    >
+
+    <fragment
+        android:id="@+id/transactionFarmerFragment"
+        android:name="com.javaindoku.yotaniniaga.view.transactionfarmer.fragment.TransactionFarmerFragment"
+        tools:layout="@layout/fragment_transaction">
+
+        <action
+            android:id="@+id/actionTransactionFragmentToSendStockSupplyFarmerFragment"
+            app:destination="@+id/sendStockSupplyFarmerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/sendStockSupplyFarmerFragment"
+        android:name="com.javaindoku.yotaniniaga.view.sendstocksupplyfarmer.SendStockSupplyFarmerFragment"
+        tools:layout="@layout/fragment_send_stock_supply_farmer"/>
+
+</navigation>

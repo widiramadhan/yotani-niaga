@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/toolbarHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgBackToolbarHome"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:tint="@color/md_white_1000"
+                android:visibility="visible"
+                android:layout_marginEnd="@dimen/_20sdp"
+                style="?android:selectableItemBackground"
+                app:srcCompat="@drawable/ic_icon_back" />
+
+            <TextView
+                android:id="@+id/lblTitleToolbarHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:text="@string/menu_home"
+                android:textColor="@color/md_white_1000"
+                android:textStyle="bold"
+                android:textSize="@dimen/_16sdp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end|center_vertical">
+
+                <ImageView
+                    android:id="@+id/imgLogout"
+                    android:layout_width="@dimen/_36sdp"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_weight="0"
+                    android:padding="@dimen/_10sdp"
+                    android:visibility="gone"
+                    style="?android:borderlessButtonStyle"
+                    android:src="@drawable/logout"
+                    android:tint="@color/white"/>
+
+                <ImageView
+                    android:id="@+id/imgSearchToolbarHome"
+                    android:layout_width="@dimen/_41sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:padding="@dimen/_10sdp"
+                    android:visibility="gone"
+                    style="?android:borderlessButtonStyle"
+                    app:srcCompat="@drawable/search_anticon_2" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/lytNotificationToolbarHome"
+                    android:layout_width="@dimen/_41sdp"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    style="?android:borderlessButtonStyle"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imgNotificationToolbarHome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_notification" />
+
+                    <ImageView
+                        android:id="@+id/imgNewNotificationIndicatorHome"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:background="@drawable/shape_round_notif_available"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toTopOf="@+id/imgNotificationToolbarHome"
+                        app:layout_constraintEnd_toStartOf="@+id/imgNotificationToolbarHome"
+                        app:layout_constraintHorizontal_bias="0.3"
+                        app:layout_constraintStart_toEndOf="@+id/imgNotificationToolbarHome"
+                        app:layout_constraintTop_toBottomOf="@+id/imgNotificationToolbarHome"
+                        app:layout_constraintVertical_bias="0.77" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+</layout>

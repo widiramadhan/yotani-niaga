@@ -1,0 +1,342 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:fontFamily">@font/nunito_sans_regular</item>
+        <item name="buttonStyle">?android:attr/borderlessButtonStyle</item>
+        <item name="otpViewStyle">@style/OtpWidget.OtpView</item>
+    </style>
+
+    <style name="AppThemeChihp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/colorPrimary</item>
+        <item name="android:actionModeBackground">@color/colorPrimary</item>
+    </style>
+
+    <style name="chipTextCheckAppearance" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="android:fontFamily">@font/nunito_sans_semi_bold</item>
+        <item name="android:textColor">@color/bg_chip_text_color</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="chipTextUncheckAppearance" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="android:fontFamily">@font/nunito_sans_regular</item>
+        <item name="android:textColor">@color/bg_chip_text_color</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="OtpWidget" />
+
+    <style name="OtpWidget.OtpView" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="Edittext.Yotani" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/bg_shape_edittext</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="textLabel" parent="Widget.Design.TextInputLayout">
+        <item name="android:textColorHint">#000000</item>
+    </style>
+
+    <style name="Widget.AppCompat.Button.myColllored" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/shape_two</item>
+    </style>
+
+    <style name="OtpActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="otpViewStyle">@style/OtpWidget.OtpView</item>
+    </style>
+
+    <style name="ActionBar.SemiTransp" parent="Base.Widget.AppCompat.ActionBar">
+        <item name="displayOptions">showHome</item>
+        <item name="background">@color/md_white_1000</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+    </style>
+
+    <style name="AppTheme.SemiTranspActionBar" parent="@style/AppTheme">
+        <item name="actionBarStyle">@style/ActionBar.SemiTransp</item>
+        <item name="android:src">@drawable/fill_1</item>
+    </style>
+    <!--        <item nameId="windowActionBarOverlay">true</item>-->
+    <style name="ButtonYoTani">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/shape_two</item>
+        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="android:fontFamily">@font/candara_bold</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="ButtonYoTaniDisable">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/shape_disabled</item>
+        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="android:fontFamily">@font/candara_bold</item>
+        <item name="android:textSize">@dimen/font_button2</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="ButtonYoTaniDisable2">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/shape_disabled</item>
+        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="android:fontFamily">@font/candara_bold</item>
+        <item name="android:textSize">@dimen/font_button2</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+
+    <style name="ButtonYoTaniWithMargin" parent="ButtonYoTani">
+        <item name="android:layout_marginLeft">@dimen/marginWidgetToParent</item>
+        <item name="android:layout_marginRight">@dimen/marginWidgetToParent</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+
+    <style name="ButtonConfirmationNegative">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/shape_three</item>
+        <item name="android:textColor">#f26327</item>
+        <item name="android:fontFamily">@font/candara_bold</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/pop_up_baground</item>
+        <item name="android:layout_width">100dp</item>
+    </style>
+
+    <style name="TextLabelHint" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="ProgressBarPrimary" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progress_bar_drawable</item>
+        <item name="android:minHeight">10dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <style name="MyToolbarFancyTheme">
+        <item name="android:homeAsUpIndicator">@color/white</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+
+    <style name="LblInput">
+        <item name="android:fontFamily">@font/nunito_sans_regular</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/lblInput</item>
+    </style>
+
+    <style name="LblValue">
+        <item name="android:fontFamily">@font/candara_bold_italic</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="LblInput.Bold">
+        <item name="android:fontFamily">@font/nunito_sans_bold</item>
+    </style>
+
+    <style name="ErrorTextInput" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorTextInputError</item>
+        <item name="android:textSize">11dp</item>
+<!--        <item name="android:layout_marginLeft">10dp</item>-->
+    </style>
+
+    <style name="TitleFaq">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_title_faq</item>
+        <item name="android:layout_marginTop">@dimen/margin_top_title_faq</item>
+        <item name="android:layout_marginBottom">@dimen/margin_bottom_title_faq</item>
+        <item name="android:fontFamily">@font/nunito_sans_regular</item>
+    </style>
+
+    <style name="Chip" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="otpViewStyle">@style/OtpWidget.OtpView</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="Chip.filter" parent="@style/Widget.MaterialComponents.Chip.Filter">
+
+    </style>
+
+    <style name="Chip.Choice" parent="@style/Widget.MaterialComponents.Chip.Choice">
+
+    </style>
+
+    <style name="Chip.Action" parent="@style/Widget.MaterialComponents.Chip.Action">
+
+    </style>
+
+    <style name="Chip.Entry" parent="@style/Widget.MaterialComponents.Chip.Entry">
+
+    </style>
+
+    <style name="popumMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:itemBackground">@color/greenTextItemLamaran</item>
+    </style>
+
+    <style name="TitleHeaderJobOffer" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/nunito_sans_bold</item>
+        <item name="android:textColor">@color/lblInput</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="LabelJobOffer" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/nunito_sans_regular</item>
+        <item name="android:lineSpacingExtra">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textColor">@color/colorLblJobOffer</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="LabelJobOfferNextPosition" parent="LabelJobOffer">
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
+    <style name="LabelValueJobOffer" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:fontFamily">@font/nunito_sans_regular</item>
+        <item name="android:textColor">@color/lblInput</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="tab_text_style">
+        <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="tab_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="tabIndicatorColor">@android:color/white</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabTextAppearance">@style/tab_text_style</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+        <item name="tabTextColor">#9d9d9d</item>
+        <item name="android:background">@drawable/bg_custom_indicator_tablayout</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabMode">fixed</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ToolTipLayoutCustomStyle">
+        <item name="ttlm_padding">25dip</item>
+        <item name="ttlm_strokeColor">@color/green</item>
+        <item name="ttlm_backgroundColor">@color/green</item>
+        <item name="ttlm_strokeWeight">2dip</item>
+        <item name="ttlm_cornerRadius">8dip</item>
+        <item name="ttlm_overlayStyle">@style/ToolTipOverlayCustomStyle</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAppearance">@style/TextAppearanceCustom</item>
+        <!--<item name="android:textAppearance">?android:attr/textAppearanceInverse</item>-->
+    </style>
+
+    <style name="TextAppearanceCustom">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ToolTipOverlayCustomStyle">
+        <item name="android:color">@color/colorPrimaryDark</item>
+        <item name="ttlm_repeatCount">999</item>
+        <item name="ttlm_duration">400</item>
+    </style>
+
+    <style name="SpinnerTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/bg_spinner_chevron</item>
+    </style>
+
+    <style name="SpinnerThemeProfile" parent="android:Widget.Spinner">
+        <item name="android:textColor">@color/lblInput</item>
+        <item name="android:background">@drawable/bg_spinner_chevron</item>
+        <item name="android:fontFamily">@font/nunito_sans_regular</item>
+    </style>
+
+    <style name="AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">#FF4081</item>  // you can change the color of the yearPiker dialog
+        <item name="android:textColorPrimary">#FF4081</item> // you can change the color of the yearPiker dialog
+    </style>
+    
+    <style name="ToolbarStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">@dimen/_9sdp</item>
+    </style>
+
+    <style name="BottomNavigationView.Active" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">@dimen/_9sdp</item>
+    </style>
+
+    <style name="ButtonSortingNotClicked" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/shape_three</item>
+        <item name="android:textColor">#f26327</item>
+        <item name="android:fontFamily">@font/candara_bold</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:tint">@color/colorPrimary</item>
+    </style>
+
+    <style name="PopupMenuMoreCentralized" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:dropDownHorizontalOffset">4dp</item>
+        <item name="android:dropDownVerticalOffset">-6dp</item>
+    </style>
+
+    <style name="TextViewValid" parent="AppTheme">
+        <item name="android:textColor">@color/colorSuccessGreen</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextViewNotValid" parent="AppTheme">
+        <item name="android:textColor">@color/colorSubtitle</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="ButtonYoTaniGreen">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/shape_two_green</item>
+        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="android:fontFamily">@font/candara_bold</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+</resources>

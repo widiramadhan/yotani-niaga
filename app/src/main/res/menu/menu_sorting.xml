@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/actHighestPrice"
+        android:title="@string/highest_price" />
+    <item android:id="@+id/actNearestDistance"
+        android:title="@string/nearest_distance" />
+    <item android:id="@+id/actAvailableQuota"
+        android:title="@string/available_quota" />
+    <item android:id="@+id/actFarthestDistance"
+        android:title="@string/farthest_distance" />
+    <item android:id="@+id/actLowestPrice"
+        android:title="@string/lowest_price" />
+</menu>

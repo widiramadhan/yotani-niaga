@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_20sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lytTitleGardenMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_header_menu_home">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:text="@string/add_certificate"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imgClose"
+                    style="?android:borderlessButtonStyle"
+                    android:layout_width="@dimen/_41sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:padding="@dimen/_14sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_close" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_header_submenu_home"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_16sdp"
+                android:paddingBottom="@dimen/_20sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_12sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/certificate_type_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/lytCertificateType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/shape_text_input"
+                        android:gravity="center_vertical"
+                        android:padding="0dp">
+
+                        <EditText
+                            android:id="@+id/textAnchor1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/spinnerCertificateType"
+                            style="@style/SpinnerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_alignTop="@id/textAnchor1"
+                            android:layout_alignBottom="@id/textAnchor1"
+                            android:fontFamily="@font/nunito_sans_regular"
+                            android:textColor="@color/colorChevron"
+                            android:textSize="@dimen/_14sdp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/lblErrorLandConditional"
+                        style="@style/ErrorTextInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/field_is_required"
+                        android:textColor="@color/colorTextInputError"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/certificate_nomor_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtCertificateNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:background="@drawable/shape_text_input"
+                        android:gravity="center_vertical"
+                        android:hint="@string/certificate_nomor" />
+
+                    <TextView
+                        android:id="@+id/lblErrorCertificateNumber"
+                        style="@style/ErrorTextInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/field_is_required"
+                        android:textColor="@color/colorTextInputError"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/validity_period_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_sans_regular"
+                                android:text="@string/from_date"
+                                android:textColor="@color/color_title_home"
+                                android:textSize="@dimen/_12sdp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:id="@+id/edtDateFrom"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:background="@drawable/shape_text_input"
+                                android:weightSum="10">
+
+                                <TextView
+                                    android:id="@+id/lblDateFrom"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="8"
+                                    android:hint="@string/dd_mm_yyyy"
+                                    android:textColor="@color/color_title_home" />
+
+                                <LinearLayout
+                                    android:id="@+id/lytDateFrom"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="center_vertical|end">
+
+                                    <ImageView
+                                        android:id="@+id/imgDateFrom"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/ic_calendar" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/lblErrorFromDate"
+                                style="@style/ErrorTextInput"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/field_is_required"
+                                android:textColor="@color/colorTextInputError"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+
+                        <androidx.legacy.widget.Space
+                            android:layout_width="@dimen/_8sdp"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_sans_regular"
+                                android:text="@string/to_date"
+                                android:textColor="@color/color_title_home"
+                                android:textSize="@dimen/_12sdp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:id="@+id/edtDateTo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:background="@drawable/shape_text_input"
+                                android:weightSum="10">
+
+                                <TextView
+                                    android:id="@+id/lblDateTo"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="8"
+                                    android:hint="@string/dd_mm_yyyy"
+                                    android:textColor="@color/color_title_home" />
+
+                                <LinearLayout
+                                    android:id="@+id/lytDateTo"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="center_vertical|end">
+
+                                    <ImageView
+                                        android:id="@+id/imgDateTo"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/ic_calendar" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/lblErrorToDate"
+                                style="@style/ErrorTextInput"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/field_is_required"
+                                android:textColor="@color/colorTextInputError"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/upload_certificate_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/_2sdp">
+
+                        <ImageView
+                            android:id="@+id/imgCertificate"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_80sdp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:layout_weight="8"
+                            android:src="@drawable/bg_rectangle_white_black"/>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="5" />
+
+                        <Button
+                            android:id="@+id/btnImgCertificate"
+                            style="@style/ButtonConfirmationNegative"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:text="@string/upload" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/lblErrorPicture"
+                        style="@style/ErrorTextInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/field_is_required"
+                        android:textColor="@color/colorTextInputError"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_32sdp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnConfirmationNegative"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_btn_cancel"
+                        android:fontFamily="@font/candara_bold"
+                        android:textAllCaps="false"
+                        android:textColor="#f26327"
+                        android:textSize="@dimen/_14sdp"
+                        tools:text="Tidak, Ubah" />
+
+                    <Button
+                        android:id="@+id/btnConfirmationPositive"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_btn_daftar"
+                        android:fontFamily="@font/candara_bold"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp"
+                        tools:text="Ya, Benar" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+</layout>

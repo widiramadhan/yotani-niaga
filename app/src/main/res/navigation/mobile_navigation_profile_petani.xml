@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_profile"
+    app:startDestination="@id/profilePetaniFragment">
+
+    <fragment
+        android:id="@+id/profilePetaniFragment"
+        android:name="com.javaindoku.yotaniniaga.view.profilePetani.ProfilePetaniFragment"
+        tools:layout="@layout/fragment_profile_petani"/>
+
+</navigation>

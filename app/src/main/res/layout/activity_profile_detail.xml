@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".view.profile.adapter.ProfileDetailActivity">
+
+        <include
+            android:id="@+id/lytToolbar"
+            layout="@layout/toolbar_home" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cimgProfilePicture"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:src="@color/colorLoading"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/lblNameUser"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:ellipsize="marquee"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:gravity="center"
+                    android:text="PT Rodye Studio"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cimgProfilePicture" />
+
+                <Button
+                    android:id="@+id/btnEditProfile"
+                    style="@style/ButtonYoTani"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:text="@string/edit_profile"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblNameUser" />
+
+                <LinearLayout
+                    android:id="@+id/crdProfile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btnEditProfile">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="@dimen/_20sdp"
+                        android:paddingBottom="@dimen/_20sdp">
+
+                        <TextView
+                            android:id="@+id/lblCompanyType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunito_sans_bold"
+                            android:text="@string/supplier_company_cv_pt_persero"
+                            android:textColor="@color/color_title_home"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_14sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_sans_bold"
+                                android:text="@string/company_name"
+                                android:textColor="@color/color_title_home"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lblCompanyName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_sans_regular"
+                                android:textColor="@color/colorSubtitle"
+                                tools:text="CV Palmia Loka Jaya" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_sans_bold"
+                                android:text="@string/address"
+                                android:textColor="@color/color_title_home"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lblCompanyAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_sans_regular"
+                                android:textColor="@color/colorSubtitle"
+                                tools:text="Bukit Meurieam, Perucyak, Aceh Barat" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_sans_bold"
+                                android:text="@string/garden_area"
+                                android:textColor="@color/color_title_home"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lblGardenArea"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_sans_bold"
+                                android:text="1000 Hektar"
+                                android:textColor="@color/colorSubtitle" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/years_of_plant"
+                                android:textColor="@color/color_title_home"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lblYearsOfPlant"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="2010"
+                                android:textColor="@color/colorSubtitle" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/seed_type"
+                                android:textColor="@color/color_title_home"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lblSeedType"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Lonsum"
+                                android:textColor="@color/colorSubtitle" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/reservation_estimation_day"
+                                android:textColor="@color/color_title_home"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lblReservationEstimationPerDay"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="11.000/Kg"
+                                android:textColor="@color/colorSubtitle" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/land_status"
+                                android:textColor="@color/color_title_home"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lblLandStatus"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="SPH"
+                                android:textColor="@color/colorSubtitle" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/certification"
+                                android:textColor="@color/color_title_home"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lblCertification"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="RSPO"
+                                android:textColor="@color/colorSubtitle" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nunito_sans_bold"
+                                    android:text="@string/bank"
+                                    android:textColor="@color/color_title_home"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/lblBank"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nunito_sans_regular"
+                                    android:textColor="@color/colorSubtitle"
+                                    tools:text="Bank" />
+                            </LinearLayout>
+
+                            <androidx.legacy.widget.Space
+                                android:layout_width="@dimen/_8sdp"
+                                android:layout_height="wrap_content" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nunito_sans_bold"
+                                    android:text="@string/account_no"
+                                    android:textColor="@color/color_title_home"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/lblAccountNo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nunito_sans_regular"
+                                    android:textColor="@color/colorSubtitle"
+                                    tools:text="99388499394" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_sans_bold"
+                                android:text="@string/on_behalf_of"
+                                android:textColor="@color/color_title_home"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lblAtasNama"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_sans_regular"
+                                android:textColor="@color/colorSubtitle"
+                                tools:text="CV Palmia Loka Jaya" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/crdProfile" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".view.profilePetani.adapter.ProfilePetaniDetailActivity">
+
+        <include
+            android:id="@+id/lytToolbar"
+            layout="@layout/toolbar_home" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cimgProfilePicture"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:src="@color/colorLoading"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/lblNameUser"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:ellipsize="marquee"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:gravity="center"
+                    android:textColor="@color/color_title_home"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cimgProfilePicture"
+                    tools:text="Arfan Ramadhan Nugroho Satrio Aji asdfa asdf asdf asdf asdf" />
+
+                <Button
+                    android:id="@+id/btnEditProfile"
+                    style="@style/ButtonYoTani"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:text="@string/edit_profile"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblNameUser" />
+
+                <LinearLayout
+                    android:id="@+id/crdProfile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btnEditProfile">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="@dimen/_20sdp"
+                        android:paddingBottom="@dimen/_20sdp">
+
+                        <TextView
+                            android:id="@+id/lblCompanyType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_14sdp"
+                            android:fontFamily="@font/nunito_sans_bold"
+                            android:text="@string/profile"
+                            android:textColor="@color/color_title_home"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_sans_bold"
+                                android:text="@string/phone_no"
+                                android:textColor="@color/color_title_home"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lblPhoneNo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_sans_regular"
+                                android:textColor="@color/colorSubtitle"
+                                tools:text="08999395523" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_sans_bold"
+                                android:text="@string/srEmail"
+                                android:textColor="@color/color_title_home"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lblEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_sans_regular"
+                                android:textColor="@color/colorSubtitle"
+                                tools:text="achmad.rodhi@indocyber.co.id" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_sans_bold"
+                                android:text="@string/address"
+                                android:textColor="@color/color_title_home"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lblAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_sans_regular"
+                                android:textColor="@color/colorSubtitle"
+                                tools:text="Jln. Basmol Raya Taman Kota JakBar" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nunito_sans_bold"
+                                    android:text="@string/profileKTPNonMandatory"
+                                    android:textColor="@color/color_title_home"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/lblKtp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nunito_sans_regular"
+                                    android:textColor="@color/colorSubtitle"
+                                    tools:text="3512384340503945093" />
+                            </LinearLayout>
+
+                            <androidx.legacy.widget.Space
+                                android:layout_width="@dimen/_8sdp"
+                                android:layout_height="wrap_content" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nunito_sans_bold"
+                                    android:text="@string/profileKartuKeluarga"
+                                    android:textColor="@color/color_title_home"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/lblKk"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nunito_sans_regular"
+                                    android:textColor="@color/colorSubtitle"
+                                    tools:text="9898345034530" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_sans_bold"
+                                android:text="@string/profileNPWP"
+                                android:textColor="@color/color_title_home"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lblNpwp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_sans_regular"
+                                android:textColor="@color/colorSubtitle"
+                                tools:text="3049530495023950923" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nunito_sans_bold"
+                                    android:text="@string/bank"
+                                    android:textColor="@color/color_title_home"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/lblBank"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nunito_sans_regular"
+                                    android:textColor="@color/colorSubtitle"
+                                    tools:text="Permata Bank" />
+                            </LinearLayout>
+
+                            <androidx.legacy.widget.Space
+                                android:layout_width="@dimen/_8sdp"
+                                android:layout_height="wrap_content" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nunito_sans_bold"
+                                    android:text="@string/bank_account_number"
+                                    android:textColor="@color/color_title_home"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/lblNoOfBank"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nunito_sans_regular"
+                                    android:textColor="@color/colorSubtitle"
+                                    tools:text="97928938928" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_sans_bold"
+                                android:text="@string/bank__account_name"
+                                android:textColor="@color/color_title_home"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lblNameOfBank"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_sans_regular"
+                                android:textColor="@color/colorSubtitle"
+                                tools:text="Ahmad Rodhi" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/crdProfile" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</layout>

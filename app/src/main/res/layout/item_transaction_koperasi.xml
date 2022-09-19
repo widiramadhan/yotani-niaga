@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgInvoice"
+            android:layout_width="@dimen/_61sdp"
+            android:layout_height="@dimen/_69sdp"
+            android:src="@drawable/ic_docs"
+            android:layout_marginVertical="@dimen/_21sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgInvoice"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgInvoice"
+            app:layout_constraintTop_toTopOf="@+id/imgInvoice">
+
+            <TextView
+                android:id="@+id/lblCompanyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="PT Padang Palma"
+                android:textColor="@color/color_title_home"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/lblWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="300 Ton"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/lblBuyPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Rp 2.300.000,00"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/color_title_home"
+                />
+
+            <TextView
+                android:id="@+id/lblDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="13 Km"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/colorSubtitle"
+                />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

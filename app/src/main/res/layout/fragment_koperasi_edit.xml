@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.javaindoku.yotaniniaga.viewmodel.EditProfileKoperasiViewModel" />
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_20sdp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="@string/photo_profile"
+                android:textColor="@color/color_title_home"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_businessman" />
+
+                <Button
+                    android:id="@+id/btnImage"
+                    style="@style/ButtonConfirmationNegative"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_24sdp"
+                    android:text="Pilih" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lblErrorGardenArea"
+                style="@style/ErrorTextInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/srPleaseSelectProvince"
+                android:textColor="@color/colorTextInputError"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="@string/business_entity_mandatory"
+                android:textColor="@color/color_title_home"
+                android:textStyle="bold" />
+
+            <!-- Spinner Badan Usaha Text -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@drawable/shape_text_input"
+                android:gravity="center_vertical"
+                android:padding="0dp">
+
+                <EditText
+                    android:id="@+id/textBadanUsaha"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/spinnerBadanUsaha"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_alignTop="@id/textBadanUsaha"
+                    android:layout_alignBottom="@id/textBadanUsaha"
+                    android:fontFamily="@font/nunito_sans_regular"
+                    android:textColor="@color/colorChevron"
+                    android:textSize="@dimen/_11sdp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="@string/srNameMandatory"
+                android:textColor="@color/color_title_home"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtFarmerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@drawable/shape_text_input"
+                android:gravity="center_vertical"
+                android:hint="@string/srName"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/lblErrorFarmerName"
+                style="@style/ErrorTextInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/field_is_required"
+                android:textColor="@color/colorTextInputError"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="@string/phoneNoMandatory"
+                android:textColor="@color/color_title_home"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@drawable/shape_text_input"
+                android:gravity="center_vertical"
+                android:hint="@string/phoneNo"
+                android:inputType="phone" />
+
+            <TextView
+                android:id="@+id/lblErrorPhoneNumber"
+                style="@style/ErrorTextInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/field_is_required"
+                android:textColor="@color/colorTextInputError"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:text="@string/bank_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textStyle="bold" />
+
+                    <!-- Spinner Kabupaten Text -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/shape_text_input"
+                        android:gravity="center_vertical"
+                        android:padding="0dp">
+
+                        <EditText
+                            android:id="@+id/textAnchor"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/spinnerBank"
+                            style="@style/SpinnerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_alignTop="@id/textAnchor"
+                            android:layout_alignBottom="@id/textAnchor"
+                            android:fontFamily="@font/nunito_sans_regular"
+                            android:textColor="@color/colorChevron"
+                            android:textSize="@dimen/_11sdp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <androidx.legacy.widget.Space
+                    android:layout_width="@dimen/_8sdp"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:text="@string/bank_account_number_mandatory"
+                        android:textColor="@color/color_title_home"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtNoOfBank"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/shape_text_input"
+                        android:gravity="center_vertical"
+                        android:hint="@string/bank_account_number"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:id="@+id/lblErrorNoBank"
+                        style="@style/ErrorTextInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/field_is_required"
+                        android:textColor="@color/colorTextInputError"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="@string/bank__account_name_mandatory"
+                android:textColor="@color/color_title_home"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtNameOfBank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@drawable/shape_text_input"
+                android:gravity="center_vertical"
+                android:hint="@string/bank__account_name"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/lblErrorNameOfBank"
+                style="@style/ErrorTextInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/field_is_required"
+                android:textColor="@color/colorTextInputError"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnConfirmationNegative"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_cancel"
+                    android:fontFamily="@font/candara_bold"
+                    android:text="@string/btn_back"
+                    android:textAllCaps="false"
+                    android:textColor="#f26327"
+                    android:textSize="@dimen/_14sdp" />
+
+                <Button
+                    android:id="@+id/btnConfirmationPositive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_daftar"
+                    android:fontFamily="@font/candara_bold"
+                    android:text="@string/btn_next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</layout>
